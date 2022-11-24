@@ -1,0 +1,17 @@
+.header {
+  height: 96px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.header_text {
+  font-size: 12px;
+  line-height: 20px;
+  letter-spacing: 1px;
+  font-weight: 600;
+  color: #FFFFFA;
+  opacity: 0.9;
+  text-transform: uppercase;
+  text-align: right;
+}
