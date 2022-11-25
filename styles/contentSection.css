@@ -1,0 +1,54 @@
+.content_section {
+  margin-left: 135px;
+  margin-right: 180px;
+}
+
+.content_section_first_block {
+  margin-bottom: 56px;
+}
+
+.content_section_first_block-text {
+  font-family: 'Cera Pro', sans-serif;
+  font-weight: 400;
+  font-size: 23px;
+  line-height: 35px;
+  color: #FFFFFA;
+  width: 100%;
+  max-width: 805px;
+}
+
+.content_section_arrow {
+  margin-bottom: 96px;
+  cursor: pointer;
+}
+
+.content_section_second_block {
+  margin-bottom: 32px;
+}
+
+.content_section_second_block-text {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 40px;
+  line-height: 48px;
+  text-align: right;
+  text-transform: uppercase;
+  color: #FFFFFA;
+  width: 100%;
+  max-width: 805px;
+}
+
+.content_section_third_block {
+  margin-bottom: 96px;
+}
+
+.content_section_third_block-text {
+  font-family: 'Cera Pro', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 32px;
+  color: #FFFFFA;
+  width: 100%;
+  max-width: 805px;
+}
