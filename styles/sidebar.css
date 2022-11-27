@@ -1,12 +1,28 @@
 .sidebar_wrapper {
   max-width: 659px;
   width: 100%;
-  border: 10px solid crimson;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
   height: 1080px;
+  position: relative;
+}
+
+.sidebar_dot {
+  background-color: #FFFFFA;
+  width: 3px;
+  height: 3px;
+  position: absolute;
+  left: 51px;
+}
+
+.top_dot {
+  top: 46px;
+}
+
+.bottom_dot {
+  bottom: 46px;
 }
 
 .sidebar_title {
