@@ -2,4 +2,29 @@
   max-width: 659px;
   width: 100%;
   border: 10px solid crimson;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 1080px;
+}
+
+.sidebar_title {
+  font-weight: 600;
+  font-size: 40px;
+  line-height: 48px;
+  text-transform: uppercase;
+  background: linear-gradient(137.64deg, #06C412 0%, #CBFF01 40.63%, #EC6D33 75.65%, #CA3D2D 104.63%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.sidebar_subtitle {
+  font-family: 'Cera Pro';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 24px;
+  color: #CBFF01;
+  text-align: left;
 }
