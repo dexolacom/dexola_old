@@ -49,7 +49,6 @@ body {
   text-rendering: optimizeSpeed;
   line-height: 1.5;
   font-family: 'Bai Jamjuree', sans-serif;
-  /*font-family: 'Cera Pro', sans-serif;*/
   background-color: #000000;
 }
 
@@ -91,16 +90,19 @@ h4 {
 }
 
 
-.app_wrapper {
+.general_wrapper {
   max-width: 1920px;
   width: 100%;
   display: flex;
 }
 
-.app_content {
+.main_wrapper {
   padding: 0 40px 0 120px;
   width: 100%;
   max-width: 1261px;
+}
+
+.content_wrapper {
   background-image: url("./assets/img/background.png");
   background-position: center;
   background-repeat: no-repeat;

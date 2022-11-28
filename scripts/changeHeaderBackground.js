@@ -1,11 +1,14 @@
-let headerBack = document.getElementById('header_background')
+// let headerBack = document.getElementById('header_background')
+let header = document.getElementById('header')
 
 document.addEventListener('scroll', function () {
   let scrollPos = window.pageYOffset
 
   if (scrollPos > 1) {
-    headerBack.style.display = 'block'
+    header.style.backgroundColor = '#000'
+    // headerBack.style.display = 'block'
   } else {
-    headerBack.style.display = 'none'
+    header.style.backgroundColor = 'transparent'
+    // headerBack.style.display = 'none'
   }
 })

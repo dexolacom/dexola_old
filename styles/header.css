@@ -1,20 +1,21 @@
-.header_background {
+/* .header_background {
   position: fixed;
   top: 0;
   background: #000;
   width: 100%;
   height: 96px;
   display: none;
-}
+} */
 
-.header {
+.header_wrapper {
   height: 96px;
   display: flex;
   align-items: center;
   justify-content: space-between;
   position: sticky;
   top: 0;
-  background-color: transparent;
+  padding: 0 40px 0 120px;
+  transition: .2s ease-in-out;
 }
 
 .header_text {
