@@ -3,10 +3,10 @@
   width: 100%;
   display: flex;
   justify-content: center;
-  align-items: center;
   flex-direction: column;
   height: 1080px;
   position: relative;
+  padding: 0 139px;
 }
 
 .sidebar_dot {
@@ -36,11 +36,107 @@
 }
 
 .sidebar_subtitle {
-  font-family: 'Cera Pro';
+  font-family: 'Cera Pro', sans-serif;
   font-style: normal;
   font-weight: 500;
   font-size: 14px;
   line-height: 24px;
   color: #CBFF01;
   text-align: left;
+}
+
+.sidebar_title_container {
+  margin-bottom: 40px;
+}
+
+.sidebar_form {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+}
+
+.sidebar_label {
+  font-family: 'Cera Pro', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  color: #FFFFFA;
+  opacity: 0.9;
+  position: absolute;
+  top: 0;
+  left: 0;
+  pointer-events: none;
+  cursor: text;
+  transition: 0.3s ease-in-out;
+}
+
+.sidebar_input_container {
+  position: relative;
+}
+
+.sidebar_input {
+  background-color: transparent;
+  outline: none;
+  border: none;
+  border-bottom: 1px solid rgb(255 255 250 / 16%);
+  font-family: 'Cera Pro', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  color: #FFFFFA;
+  width: 100%;
+  transition: 0.3s ease-in-out;
+}
+
+.sidebar_input:hover, :focus {
+  border-bottom: 1px solid #FFFFFA;
+}
+
+.sidebar_input:focus + label {
+  font-size: 12px;
+  line-height: 16px;
+  top: -20px;
+}
+
+.sidebar_input:not(:placeholder-shown) + label {
+  font-size: 12px;
+  line-height: 16px;
+  top: -20px;
+  opacity: 1;
+}
+
+.sidebar_input:not(:placeholder-shown):not(:focus) + label {
+  opacity: 0.5;
+}
+
+input::placeholder {
+  opacity: 0;
+}
+
+.sidebar_button {
+  padding: 12px 24px;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 24px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: #000000;
+  background-color: #FFFFFA;
+  cursor: pointer;
+}
+
+.sidebar_button:hover {
+  background-color: #CBFF01;
+}
+
+.sidebar_form textarea::placeholder {
+  font-family: 'Cera Pro', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 18px;
+  color: #FFFFFA;
+  opacity: 0.4;
 }

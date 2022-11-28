@@ -38,6 +38,12 @@
   max-width: 805px;
 }
 
+.content_section_second_block-text span {
+  background: linear-gradient(92.58deg, #00FF1A 76.42%, #CBFF01 87.47%, #EC6D33 97.02%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
 .content_section_third_block {
   margin-bottom: 96px;
 }

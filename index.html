@@ -47,7 +47,8 @@
         <img class='content_section_arrow' src='assets/img/arrow.svg'/>
         <div class='content_section_second_block'>
           <p class='content_section_second_block-text'>
-            By working with visionary startup founders and entrepreneurs, we reveal hidden goldmines
+            By working with visionary <span>startup founders</span> and <span>entrepreneurs</span>, we reveal hidden
+            goldmines
           </p>
         </div>
         <div class='content_section_third_block'>
@@ -89,8 +90,40 @@
     <aside class='sidebar_wrapper'>
     <div class='sidebar_dot top_dot'></div>
     <div class='sidebar_dot bottom_dot'></div>
-      <h2 class='sidebar_title'>Got a project <br/> idea in mind?</h2>
-      <span class='sidebar_subtitle'>Let’s talk</span>
+      <div class='sidebar_title_container'>
+        <h2 class='sidebar_title'>Got a project <br/> idea in mind?</h2>
+        <span class='sidebar_subtitle'>Let’s talk</span>
+      </div>
+      <form class='sidebar_form'>
+        <div class='sidebar_input_container'>
+          <input id='nameInput' class='sidebar_input' type='text' placeholder='name' />
+          <label class='sidebar_label' for='nameInput'>Name</label>
+        </div>
+
+        <div class='sidebar_input_container'>
+          <input id='emailInput' class='sidebar_input' type='email' placeholder='email'/>
+          <label class='sidebar_label' for='emailInput'>Email / Telegram</label>
+        </div>
+
+        <div class='sidebar_input_container'>
+          <input id='companyInput' class='sidebar_input' type='text' placeholder='company'/>
+          <label class='sidebar_label' for='companyInput'>Company (optional)</label>
+        </div>
+
+        <div class='sidebar_input_container'></div>
+
+
+
+
+<!--        <label class='sidebar_label' for='messageInput'>Message</label>-->
+<!--        <textarea-->
+<!--          id='messageInput'-->
+<!--          class='sidebar_input'-->
+<!--          placeholder='Tell us about your needs and we’ll set up a discovery call with one of our subject matter experts'>-->
+<!--        </textarea>-->
+
+        <button class='sidebar_button' type='submit'>Send message</button>
+      </form>
     </aside>
   </div>
 </body>
