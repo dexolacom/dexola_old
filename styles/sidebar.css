@@ -1,12 +1,9 @@
 .sidebar_wrapper {
   max-width: 659px;
   width: 100%;
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
   height: 1080px;
   position: relative;
-  padding: 0 139px;
+  padding: 262px 139px;
 }
 
 .sidebar_dot {
@@ -25,6 +22,11 @@
   bottom: 46px;
 }
 
+
+.sidebar_title_container {
+  margin-bottom: 60px;
+}
+
 .sidebar_title {
   font-weight: 600;
   font-size: 40px;
@@ -33,6 +35,7 @@
   background: linear-gradient(137.64deg, #06C412 0%, #CBFF01 40.63%, #EC6D33 75.65%, #CA3D2D 104.63%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+  margin-bottom: 14px;
 }
 
 .sidebar_subtitle {
@@ -45,14 +48,10 @@
   text-align: left;
 }
 
-.sidebar_title_container {
-  margin-bottom: 40px;
-}
-
 .sidebar_form {
   display: flex;
   flex-direction: column;
-  gap: 50px;
+  gap: 35px;
 }
 
 .sidebar_label {
@@ -79,7 +78,7 @@
   background-color: transparent;
   outline: none;
   border: none;
-  border-bottom: 1px solid rgb(255 255 250 / 16%);
+  border-bottom: 1px solid rgba(255,255,250, 0.16);
   font-family: 'Cera Pro', sans-serif;
   font-style: normal;
   font-weight: 400;
@@ -88,6 +87,7 @@
   color: #FFFFFA;
   width: 100%;
   transition: 0.3s ease-in-out;
+  padding: 0 0 5px 0;
 }
 
 .sidebar_input:hover, :focus {
@@ -115,7 +115,7 @@ input::placeholder {
   opacity: 0;
 }
 
-.sidebar_form textarea::placeholder {
+.sidebar_form .sidebar_textarea::placeholder {
   font-family: 'Cera Pro', sans-serif;
   font-style: normal;
   font-weight: 400;
@@ -125,9 +125,27 @@ input::placeholder {
   opacity: 0.4;
 }
 
-.sidebar_form textarea {
+.sidebar_form .sidebar_textarea {
   resize: none;
-  background-color: teal;
+  width: 100%;
+  background-color: transparent;
+  outline: none;
+  border: none;
+  border-bottom: 1px solid rgba(255,255,250, 0.16);
+  font-family: 'Cera Pro', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  color: #FFFFFA;
+  width: 100%;
+  transition: 0.3s ease-in-out;
+  padding: 5px 0 12px 0;
+}
+
+.sidebar_textarea:hover,
+.sidebar_textarea:focus {
+  border-bottom: 1px solid #FFFFFA;
 }
 
 .sidebar_textarea_label {
@@ -138,26 +156,43 @@ input::placeholder {
   line-height: 20px;
   color: #FFFFFA;
   opacity: 0.9;
-  /*position: absolute;*/
-  /*top: 0;*/
-  /*left: 0;*/
-  /*pointer-events: none;*/
-  /*cursor: text;*/
-  /*transition: 0.3s ease-in-out;*/
 }
 
 .sidebar_button {
-  padding: 12px 24px;
   font-weight: 700;
   font-size: 12px;
   line-height: 24px;
-  letter-spacing: 1px;
   text-transform: uppercase;
+  padding: 10px 0;
+  letter-spacing: 1px;
   color: #000000;
   background-color: #FFFFFA;
   cursor: pointer;
+  width: 100%;
+  max-width: 152px;
 }
 
 .sidebar_button:hover {
   background-color: #CBFF01;
+}
+
+.sidebar_sidetext {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 20px;
+  display: flex;
+  align-items: center;
+  letter-spacing: 6px;
+  text-transform: uppercase;
+  color: #FFFFFA;
+  opacity: 0.4;
+  /*  */
+  writing-mode: vertical-lr;
+  display: inline;  
+  transform: rotate(180deg);
+  top: 220px;
+  bottom: 227px;
+  position: absolute;
+  right: 24px;
 }
