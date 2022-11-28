@@ -2,8 +2,9 @@
   max-width: 659px;
   width: 100%;
   height: 1080px;
-  position: relative;
   padding: 262px 139px;
+  position: sticky;
+  top: 0;
 }
 
 .sidebar_dot {
