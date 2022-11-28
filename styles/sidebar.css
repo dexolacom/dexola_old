@@ -115,6 +115,37 @@ input::placeholder {
   opacity: 0;
 }
 
+.sidebar_form textarea::placeholder {
+  font-family: 'Cera Pro', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 18px;
+  color: #FFFFFA;
+  opacity: 0.4;
+}
+
+.sidebar_form textarea {
+  resize: none;
+  background-color: teal;
+}
+
+.sidebar_textarea_label {
+  font-family: 'Cera Pro', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  color: #FFFFFA;
+  opacity: 0.9;
+  /*position: absolute;*/
+  /*top: 0;*/
+  /*left: 0;*/
+  /*pointer-events: none;*/
+  /*cursor: text;*/
+  /*transition: 0.3s ease-in-out;*/
+}
+
 .sidebar_button {
   padding: 12px 24px;
   font-weight: 700;
@@ -129,14 +160,4 @@ input::placeholder {
 
 .sidebar_button:hover {
   background-color: #CBFF01;
-}
-
-.sidebar_form textarea::placeholder {
-  font-family: 'Cera Pro', sans-serif;
-  font-style: normal;
-  font-weight: 400;
-  font-size: 12px;
-  line-height: 18px;
-  color: #FFFFFA;
-  opacity: 0.4;
 }
