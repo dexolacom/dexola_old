@@ -4,6 +4,14 @@
     max-width: 537px;
     padding: 160px 123px 183px 120px;
   }
+
+  .top_dot {
+    top: 36px;
+  }
+
+  .bottom_dot {
+    bottom: 36px;
+  }
   
   .hero_section h1{
     font-size: 88px;
@@ -23,7 +31,50 @@
     gap: 53px;
   }
 
-  
+  .content_section {
+    margin-left: 122px;
+  }
+
+  .content_section_first_block-text {
+    font-size: 20px;
+    line-height: 32px;
+  }
+
+  .content_section_second_block {
+     margin-bottom: 32px;
+  }
+
+  .content_section_second_block-text {
+    font-size: 32px;
+    line-height: 40px;
+  }
+
+  .content_section_third_block-text {
+    font-size: 18px;
+    line-height: 28px;
+  }
+
+  .core_section {
+    margin: 0 180px 30px 125px;
+  }
+
+  .core_section_title {
+    font-size: 14px;
+    line-height: 24px;
+  }
+
+  .core_section_list-item {
+    font-size: 16px;
+    line-height: 20px;
+  }
+
+  .core_section_list-container {
+    gap: 115px
+  }
+
+  .footer {
+    max-width: 942px;
+  }
 
 
 }
