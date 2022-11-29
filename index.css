@@ -138,6 +138,10 @@ h4 {
     /* .content_wrapper {
         background-image: url("./assets/img/1366_background.png");
     } */
+    .main_wrapper {
+      padding: 0 32px 0 52px;
+      max-width: 916px;
+    }
 }
 
 @media (max-width: 1025px) {

@@ -55,7 +55,7 @@
   }
 
   .core_section {
-    margin: 0 180px 30px 125px;
+    margin: 0 0 30px 125px;
   }
 
   .core_section_title {
@@ -80,7 +80,48 @@
 }
 
 @media (max-width: 1367px) {
-    
+  .header_wrapper {
+    padding: 0 32px 0 52px;
+    max-width: 916px;
+  }
+
+  .hero_section {
+    margin-top: 59px;
+    margin-bottom: 39px
+  }
+
+  .hero_section_title-right {
+    margin-left: 107px;
+  } 
+
+  .hero_section_text-container {
+    gap: 8px;
+  }
+
+  .content_section {
+    margin-left: 108px;
+    margin-right: 105px;
+  }
+
+  .content_section_first_block {
+    margin-bottom: 34px;
+  }
+
+  .content_section_arrow {
+    margin-bottom: 88px;
+  }
+
+  .content_section_third_block {
+    margin-bottom: 88px;
+  }
+
+  .core_section {
+    margin: 0 0 30px 102px;
+  }
+
+  .core_section_list-container {
+    gap: 72px;
+  }
 }
 
 @media (max-width: 1025px) {
