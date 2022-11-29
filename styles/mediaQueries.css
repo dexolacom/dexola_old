@@ -2,7 +2,21 @@
 @media (max-width: 1681px) {
   .sidebar_wrapper {
     max-width: 537px;
-    padding: 160px 123px 183px 120px;
+    padding: 148px 0 0 126px;
+    height: 900px;
+    position: sticky;
+    top: 0;
+    right: 0;
+  }
+
+  .sidebar_input_container {
+    width: 80%;
+  }
+
+  .sidebar_sidetext {
+    top: 121px;
+    bottom: 147px;
+    right: -18px;
   }
 
   .top_dot {
@@ -10,7 +24,7 @@
   }
 
   .bottom_dot {
-    bottom: 36px;
+    bottom: 57px;
   }
   
   .hero_section h1{
@@ -80,6 +94,43 @@
 }
 
 @media (max-width: 1367px) {
+  .sidebar_wrapper {
+    max-width: 450px;
+    padding: 105px 0 0 86px;
+    height: 768px;
+    position: sticky;
+    top: 0;
+    right: 0;
+  }
+
+  .sidebar_title_container {
+    margin-bottom: 51px;
+  }
+
+  .sidebar_title {
+    font-size: 36px;
+    line-height: 44px;
+  }
+
+  .sidebar_input_container {
+    width: 80%;
+  }
+
+  .sidebar_sidetext {
+    top: 121px;
+    bottom: 147px;
+    right: -18px;
+  }
+
+  .top_dot {
+    top: 36px;
+  }
+
+  .bottom_dot {
+    bottom: 57px;
+  }
+
+
   .header_wrapper {
     padding: 0 32px 0 52px;
     max-width: 916px;
