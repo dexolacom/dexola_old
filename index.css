@@ -5,6 +5,7 @@
 @import url('styles/contentSection.css');
 @import url('styles/coreSection.css');
 @import url('styles/footer.css');
+@import url('styles/mediaQueries.css');
 
 @font-face {
   font-family: "Cera Pro";
@@ -103,7 +104,7 @@ h4 {
 }
 
 .content_wrapper {
-  background-image: url("./assets/img/1920_background.png");
+  /* background-image: url("./assets/img/1920_background.png"); */
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -123,33 +124,37 @@ h4 {
   z-index: -1000; */
 /* } */
 
-@media (max-width: 1681px) {
-    .content_wrapper {
+ @media (max-width: 1681px) {
+  .main_wrapper {
+    padding: 0 40px 0 114px;
+    max-width: 1107px;
+  }
+    /* .content_wrapper {
         background-image: url("./assets/img/1680_background.png");
-    }
+    } */
 }
 
 @media (max-width: 1367px) {
-    .content_wrapper {
+    /* .content_wrapper {
         background-image: url("./assets/img/1366_background.png");
-    }
+    } */
 }
 
 @media (max-width: 1025px) {
-    .content_wrapper {
+    /* .content_wrapper {
         background-image: url("./assets/img/1024_background.png");
-    }
+    } */
 }
 
 @media (max-width: 769px) {
-    .content_wrapper {
+    /* .content_wrapper {
         background-image: url("./assets/img/768_background.png");
-    }
+    } */
 }
 
 @media (max-width: 480px) {
-    .content_wrapper {
+    /* .content_wrapper {
         background-image: url("./assets/img/mobile_background.png");
-    }
+    } */
 }
 

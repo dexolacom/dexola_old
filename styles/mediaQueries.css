@@ -1,0 +1,46 @@
+
+@media (max-width: 1681px) {
+  .sidebar_wrapper {
+    max-width: 537px;
+    padding: 160px 123px 183px 120px;
+  }
+  
+  .hero_section h1{
+    font-size: 88px;
+    line-height: 88px;
+  }
+
+  .hero_section_title-right {
+    margin-left: 123px;
+  } 
+
+  .hero_section p {
+    font-size: 14px;
+    line-height: 24px;
+  }
+
+  .hero_section_text-container {
+    gap: 53px;
+  }
+
+  
+
+
+}
+
+@media (max-width: 1367px) {
+    
+}
+
+@media (max-width: 1025px) {
+    
+}
+
+@media (max-width: 769px) {
+    
+}
+
+@media (max-width: 480px) {
+    
+}
+
