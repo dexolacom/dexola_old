@@ -103,9 +103,53 @@ h4 {
 }
 
 .content_wrapper {
-  background-image: url("./assets/img/background.png");
+  background-image: url("./assets/img/1920_background.png");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   /* background-size: 100% 100%; */
+  /* position: relative; */
+  /* overflow: hidden; */
 }
+
+/* .content_wrapper .background { */
+  /* width: 100%; */
+  /* max-width: 100%; */
+  /* height: 100%; */
+  /* object-fit: cover; */
+  /* position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1000; */
+/* } */
+
+@media (max-width: 1681px) {
+    .content_wrapper {
+        background-image: url("./assets/img/1680_background.png");
+    }
+}
+
+@media (max-width: 1367px) {
+    .content_wrapper {
+        background-image: url("./assets/img/1366_background.png");
+    }
+}
+
+@media (max-width: 1025px) {
+    .content_wrapper {
+        background-image: url("./assets/img/1024_background.png");
+    }
+}
+
+@media (max-width: 769px) {
+    .content_wrapper {
+        background-image: url("./assets/img/768_background.png");
+    }
+}
+
+@media (max-width: 480px) {
+    .content_wrapper {
+        background-image: url("./assets/img/mobile_background.png");
+    }
+}
+

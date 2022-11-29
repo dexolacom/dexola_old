@@ -15,7 +15,7 @@
   position: sticky;
   top: 0;
   padding: 0 40px 0 120px;
-  transition: .2s ease-in-out;
+  transition: .1s ease-in-out;
 }
 
 .header_text {
