@@ -4,6 +4,7 @@
 @import url('styles/heroSection.css');
 @import url('styles/contentSection.css');
 @import url('styles/coreSection.css');
+@import url('styles/formSection.css');
 @import url('styles/footer.css');
 @import url('styles/mediaQueries.css');
 
@@ -106,9 +107,9 @@ h4 {
 
 .content_wrapper {
   /* background-image: url("./assets/img/1920_background.png"); */
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
+  /* background-position: center; */
+  /* background-repeat: no-repeat; */
+  /* background-size: cover; */
   /* background-size: 100% 100%; */
   /* position: relative; */
   /* overflow: hidden; */
@@ -135,7 +136,7 @@ h4 {
     } */
 }
 
-@media (max-width: 1367px) {
+@media (max-width: 1440px) {
     /* .content_wrapper {
         background-image: url("./assets/img/1366_background.png");
     } */
@@ -146,6 +147,14 @@ h4 {
 }
 
 @media (max-width: 1025px) {
+  .general_wrapper {
+    flex-direction: column;
+  }
+
+  .main_wrapper {
+    padding: 0 72px 0 66px;
+    max-width: 1024px;
+  }
     /* .content_wrapper {
         background-image: url("./assets/img/1024_background.png");
     } */
