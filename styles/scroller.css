@@ -1,7 +1,7 @@
 .scroller {
   width: calc(100% + 138px);
   position: sticky;
-  bottom: 10px;
+  bottom: 0;
   background-color: #06C412;
   display: none;
   margin-left: -66px;
