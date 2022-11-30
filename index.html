@@ -100,12 +100,39 @@
     </div>
     <!--   formSection   -->
     <section class='form_section'>
-      <div class='sidebar_dot form_section_dot'></div>
-      <div class='sidebar_dot form_section_dot'></div>
-      <div class='sidebar_title_container'>
-        <h2 class='sidebar_title'>Got a project <br/> idea in mind?</h2>
-        <span class='sidebar_subtitle'>Let’s talk</span>
+      <div class='form_top_dot form_section_dot'></div>
+      <div class='form_bottom_dot form_section_dot'></div>
+      <div class='form_section_title_container'>
+        <h2 class='form_section_title'>Got a project idea in mind?</h2>
+        <span class='form_section_subtitle'>Let’s talk</span>
       </div>
+
+      <form class='form_section_form'>
+        <div class='form_section_input_container'>
+          <input id='nameInput' class='form_section_input' type='text' placeholder='name' />
+          <label class='form_section_label' for='nameInput'>Name</label>
+        </div>
+
+        <div class='form_section_input_container'>
+          <input id='emailInput' class='form_section_input' type='email' placeholder='email'/>
+          <label class='form_section_label' for='emailInput'>Email / Telegram</label>
+        </div>
+
+        <div class='form_section_input_container'>
+          <input id='companyInput' class='form_section_input' type='text' placeholder='company'/>
+          <label class='form_section_label' for='companyInput'>Company (optional)</label>
+        </div>
+
+        <div class='form_section_input_container'>
+          <label class='form_section_textarea_label' for='messageInput'>Message</label>
+          <textarea
+          class='form_section_textarea'
+          placeholder='Tell us about your needs and we’ll set up a discovery call with one of our subject matter experts'></textarea>
+        </div>
+
+        <button class='form_section_button' type='submit'>Send message</button>
+        <p class='form_section_sidetext'>Crack the innovation code. Drive smarter futures.</p>
+      </form>
     </section>
       <!-- sidebar -->
     <aside class='sidebar_wrapper'>
