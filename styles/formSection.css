@@ -1,4 +1,5 @@
 .form_section {
+  display: none;
   position: relative;
   padding: 345px 0 369px 66px;
 }

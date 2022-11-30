@@ -1,0 +1,25 @@
+.scroller {
+  width: calc(100% + 138px);
+  position: sticky;
+  bottom: 10px;
+  background-color: #06C412;
+  display: none;
+  margin-left: -66px;
+  padding: 12px 0 12px 83px;
+}
+
+.scroller_dot {
+  background-color: #FFFFFA;
+  width: 3px;
+  height: 3px;
+  margin-right: 18px;
+}
+
+.scroller_text {
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 24px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: #FFFFFA;
+}

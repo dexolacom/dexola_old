@@ -176,6 +176,16 @@
 }
 
 @media (max-width: 1025px) {
+  .scroller {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+  }
+
+  .form_section {
+    display: block;
+  }
+
   .sidebar_wrapper {
     display: none;
   }

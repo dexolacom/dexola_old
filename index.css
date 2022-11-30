@@ -6,6 +6,7 @@
 @import url('styles/coreSection.css');
 @import url('styles/formSection.css');
 @import url('styles/footer.css');
+@import url('styles/scroller.css');
 @import url('styles/mediaQueries.css');
 
 @font-face {
