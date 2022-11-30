@@ -28,3 +28,7 @@
   text-transform: uppercase;
   text-align: right;
 }
+
+.header_text span {
+  display: block;
+}

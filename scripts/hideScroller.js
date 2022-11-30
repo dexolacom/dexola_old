@@ -1,7 +1,6 @@
 let scroller = document.getElementById('scroller')
 
 const showOnScroll = () => {
-
   document.addEventListener('scroll', function () {
     let scrollPos = window.pageYOffset
 
@@ -11,7 +10,6 @@ const showOnScroll = () => {
       scroller.style.display = 'flex'
     } 
   })
-  
 }
 
 showOnScroll()
