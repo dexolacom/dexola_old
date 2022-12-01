@@ -312,6 +312,20 @@
 
 }
 
+@media (max-width: 730px) {
+  .hero_section h1 {
+      font-size: 70px;
+      line-height: 70px;
+    }
+}
+
+@media (max-width: 730px) {
+  .hero_section h1 {
+      font-size: 65px;
+      line-height: 65px;
+    }
+}
+
 @media (max-width: 560px) {
   .header_wrapper {
     padding: 0 16px;
@@ -468,5 +482,12 @@
     display: block;
   }
 
+}
+
+@media (max-width: 420px) {
+  .hero_section h1 {
+    font-size: 45px;
+    line-height: 50px;
+  }
 }
 
