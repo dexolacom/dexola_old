@@ -36,7 +36,7 @@
     margin-left: 123px;
   } 
 
-  .hero_section p {
+  .hero_section_text {
     font-size: 14px;
     line-height: 24px;
   }
@@ -329,7 +329,7 @@
   }
 
   .hero_section {
-
+    margin-top: 80px;
   }
 
   .hero_section h1 {
@@ -338,16 +338,27 @@
   }
 
   .hero_section_title-right {
-  
+    margin-left: 70px;
   } 
 
-  .hero_section p {
+  .hero_section_text {
+    display: none;
+  }
+
+  .hero_section_text-mobile {
+    display: block;
     font-size: 12px;
     line-height: 18px;
+    font-weight: 600;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    background: linear-gradient(172deg, #06C412 14.08%, #CBFF01 47.44%, #EC6D33 76.2%, #CA3D2D 99.99%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
   }
 
   .content_section {
-
+    margin-left: 70px;
   }
 
   .content_section_first_block-text {
@@ -384,7 +395,12 @@
     line-height: 20px;
   }
 
-  
+  .form_section {}
+
+  .form_section_title {
+    font-size: 32px;
+    line-height: 40px;
+  }
 
     
 }

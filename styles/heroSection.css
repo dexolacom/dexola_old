@@ -37,6 +37,10 @@
   /*text-fill-color: transparent;*/
 }
 
+.hero_section_text-mobile {
+  display: none;
+}
+
 .break_line {
   display: block;
 }
