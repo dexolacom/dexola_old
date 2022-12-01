@@ -330,6 +330,7 @@
 
   .hero_section {
     margin-top: 80px;
+    margin-bottom: 37px;
   }
 
   .hero_section h1 {
@@ -346,29 +347,40 @@
   }
 
   .hero_section_text-mobile {
-    display: block;
+    display: grid;
     font-size: 12px;
     line-height: 18px;
     font-weight: 600;
-    letter-spacing: 2px;
+    letter-spacing: 1px;
     text-transform: uppercase;
     background: linear-gradient(172deg, #06C412 14.08%, #CBFF01 47.44%, #EC6D33 76.2%, #CA3D2D 99.99%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
+    margin-top: 12px;
+  }
+
+  .hero_section_text-container {
+    gap: 35px;
   }
 
   .content_section {
     margin-left: 70px;
   }
 
+  .content_section_first_block {
+    margin-bottom: 20px;
+  }
+
   .content_section_first_block-text {
     font-size: 16px;
     line-height: 26px;
+    margin-top: -3px;
   }
 
   .content_section_arrow {
     height: 54px;
     width: 54px;
+    margin-bottom: 58px;
   }
 
   .content_section_second_block-text {
