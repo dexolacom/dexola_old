@@ -183,7 +183,7 @@
   }
 }
 
-@media (max-width: 1025px) {
+@media (max-width: 1250px) {
   .scroller {
     display: flex;
     align-items: center;
@@ -200,7 +200,7 @@
 
   .header_wrapper {
     padding: 0 72px 0 66px;
-    max-width: 1024px;
+    max-width: 1250px;
   }
 
   .hero_section {
@@ -246,7 +246,7 @@
   }
 }
 
-@media (max-width: 769px) {
+@media (max-width: 850px) {
   .header_wrapper {
     padding: 0 48px 0 48px;
   }

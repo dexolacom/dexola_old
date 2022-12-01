@@ -147,21 +147,21 @@ h4 {
     }
 }
 
-@media (max-width: 1025px) {
+@media (max-width: 1250px) {
   .general_wrapper {
     flex-direction: column;
   }
 
   .main_wrapper {
     padding: 0 72px 0 66px;
-    max-width: 1024px;
+    max-width: 1250px;
   }
     /* .content_wrapper {
         background-image: url("./assets/img/1024_background.png");
     } */
 }
 
-@media (max-width: 769px) {
+@media (max-width: 850px) {
   .main_wrapper {
     padding: 0 48px 0 48px;
   }
