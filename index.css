@@ -163,14 +163,19 @@ h4 {
 
 @media (max-width: 850px) {
   .main_wrapper {
-    padding: 0 48px 0 48px;
+    padding: 0 48px;
+    max-width: 850px;
   }
     /* .content_wrapper {
         background-image: url("./assets/img/768_background.png");
     } */
 }
 
-@media (max-width: 480px) {
+@media (max-width: 560px) {
+  .main_wrapper {
+    padding: 0 16px;
+    max-width: 560px;
+  }
     /* .content_wrapper {
         background-image: url("./assets/img/mobile_background.png");
     } */
