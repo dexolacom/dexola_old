@@ -455,8 +455,9 @@
     top: 0px;
     bottom: 171px;
     right: 16px;
-    font-size: 8px;
+    font-size: 9px;
     letter-spacing: 5px;
+    line-height: 16px;
   }
 
   .form_break_line {
