@@ -346,6 +346,46 @@
     line-height: 18px;
   }
 
+  .content_section {
+
+  }
+
+  .content_section_first_block-text {
+    font-size: 16px;
+    line-height: 26px;
+  }
+
+  .content_section_arrow {
+    height: 54px;
+    width: 54px;
+  }
+
+  .content_section_second_block-text {
+    font-size: 24px;
+    line-height: 32px;
+  }
+
+  .content_section_third_block {
+
+  }
+
+  .content_section_third_block-text {
+    font-size: 14px;
+    line-height: 22px;
+  }
+
+  .core_section_title {
+    font-size: 12px;
+    line-height: 16px;
+  }
+
+  .core_section_list-item {
+    font-size: 14px;
+    line-height: 20px;
+  }
+
+  
+
     
 }
 
