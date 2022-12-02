@@ -1,5 +1,5 @@
 const scroller = document.getElementById('scroller')
-const formSection = document.getElementById('form_section')
+const formSection = document.getElementById('sidebar')
 
 scroller.addEventListener('click', function() {
   console.log(window.innerWidth);
