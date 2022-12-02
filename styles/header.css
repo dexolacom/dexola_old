@@ -14,8 +14,9 @@
   justify-content: space-between;
   position: sticky;
   top: 0;
+  z-index: 1000;
   padding: 0 40px 0 120px;
-  transition: .1s ease-in-out;
+  transition: .3s ease-in-out;
 }
 
 .header_text {

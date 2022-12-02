@@ -6,6 +6,7 @@
   display: none;
   margin-left: -66px;
   padding: 12px 0 12px 83px;
+  cursor: pointer;
 }
 
 .scroller_dot {

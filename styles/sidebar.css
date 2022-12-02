@@ -172,6 +172,7 @@ input::placeholder {
   cursor: pointer;
   width: 100%;
   max-width: 152px;
+  border-style: none;
 }
 
 .sidebar_button:hover {
