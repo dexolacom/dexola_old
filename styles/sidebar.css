@@ -34,7 +34,7 @@
   font-size: 40px;
   line-height: 48px;
   text-transform: uppercase;
-  background: linear-gradient(137.64deg, #06C412 0%, #CBFF01 40.63%, #EC6D33 75.65%, #CA3D2D 104.63%);
+  background: linear-gradient(110deg, #06C412 0%, #CBFF01 17.63%, #EC6D33 63.65%, #CA3D2D 58.63%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   margin-bottom: 14px;
@@ -92,6 +92,10 @@
   padding: 0 0 5px 0;
 }
 
+ .error {
+  border-bottom: 1px solid #EA4D50;
+}
+
 .sidebar_input:hover, .sidebar_input:focus {
   border-bottom: 1px solid #FFFFFA;
 }
@@ -127,22 +131,9 @@ input::placeholder {
   opacity: 0.4;
 }
 
-.sidebar_form .sidebar_textarea {
+.textarea {
   resize: none;
-  width: 100%;
-  background-color: transparent;
-  outline: none;
-  border: none;
-  border-bottom: 1px solid rgba(255,255,250, 0.16);
-  font-family: 'Cera Pro', sans-serif;
-  font-style: normal;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 20px;
-  color: #FFFFFA;
-  width: 100%;
-  transition: 0.3s ease-in-out;
-  padding: 5px 0 12px 0;
+  padding: 0 0 5px 0;
 }
 
 .sidebar_textarea:hover,
@@ -198,4 +189,8 @@ input::placeholder {
   bottom: 227px;
   position: absolute;
   right: 24px;
+}
+
+.sidebar_break_md {
+  display: block;
 }

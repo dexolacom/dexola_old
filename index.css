@@ -4,11 +4,9 @@
 @import url('styles/heroSection.css');
 @import url('styles/contentSection.css');
 @import url('styles/coreSection.css');
-@import url('styles/formSection.css');
 @import url('styles/footer.css');
 @import url('styles/scroller.css');
 @import url('styles/mediaQueries.css');
-@import url('styles/mediaQueriesBackgrounds');
 
 @font-face {
   font-family: "Cera Pro";

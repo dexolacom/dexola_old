@@ -7,6 +7,7 @@
   <link rel="stylesheet" href="./index.css">
   <script type="module" src="scripts/changeHeaderBackground.js"></script>
   <script type="module" src="scripts/scroller.js"></script>
+  <script type="module" src="scripts/formValidator.js"></script>
 </head>
 <body>
   <div class='general_wrapper'>
@@ -100,48 +101,12 @@
         </div>
       </main>
     </div>
-    <!--   formSection   -->
-    <!-- <section class='form_section' id='form_section'>
-      <div class='form_top_dot form_section_dot'></div>
-      <div class='form_bottom_dot form_section_dot'></div>
-      <div class='form_section_title_container'>
-        <h2 class='form_section_title'>Got a project <span class='mobile_form_break_line'>idea <span class='form_break_line'>in mind?</span></span> </h2>
-        <span class='form_section_subtitle'>Let’s talk</span>
-      </div>
-
-      <form class='form_section_form' >
-        <div class='form_section_input_container'>
-          <input id='nameInput' class='form_section_input' type='text' placeholder='name' />
-          <label class='form_section_label' for='nameInput'>Name</label>
-        </div>
-
-        <div class='form_section_input_container'>
-          <input id='emailInput' class='form_section_input' type='email' placeholder='email'/>
-          <label class='form_section_label' for='emailInput'>Email / Telegram</label>
-        </div>
-
-        <div class='form_section_input_container'>
-          <input id='companyInput' class='form_section_input' type='text' placeholder='company'/>
-          <label class='form_section_label' for='companyInput'>Company (optional)</label>
-        </div>
-
-        <div class='form_section_input_container'>
-          <label class='form_section_textarea_label' for='messageInput'>Message</label>
-          <textarea
-          class='form_section_textarea'
-          placeholder='Tell us about your needs and we’ll set up a discovery call with one of our subject matter experts'></textarea>
-        </div>
-
-        <button class='form_section_button' type='submit'>Send message</button>
-        <p class='form_section_sidetext'>Crack the innovation code. Drive smarter futures.</p>
-      </form>
-    </section> -->
       <!-- sidebar -->
     <section class='sidebar_wrapper' id="sidebar">
       <div class='sidebar_dot top_dot'></div>
       <div class='sidebar_dot bottom_dot'></div>
       <div class='sidebar_title_container'>
-        <h2 class='sidebar_title'>Got a project idea in mind?</h2>
+        <h2 class='sidebar_title'>Got a project <span class='sidebar_break_md'>idea <span class='sidebar_break_sm'>in mind?</span></span></h2>
         <span class='sidebar_subtitle'>Let’s talk</span>
       </div>
       <form class='sidebar_form'>
@@ -151,7 +116,7 @@
         </div>
 
         <div class='sidebar_input_container'>
-          <input id='emailInput' class='sidebar_input' type='email' placeholder='email'/>
+          <input id='emailInput' class='sidebar_input email_input' type='email' placeholder='email'/>
           <label class='sidebar_label' for='emailInput'>Email / Telegram</label>
         </div>
 
@@ -163,7 +128,7 @@
         <div class='sidebar_input_container'>
           <label class='sidebar_textarea_label' for='messageInput'>Message</label>
           <textarea
-          class='sidebar_textarea'
+          class='sidebar_input textarea'
           placeholder='Tell us about your needs and we’ll set up a discovery call with one of our subject matter experts'></textarea>
         </div>
 

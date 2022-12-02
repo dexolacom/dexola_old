@@ -1,14 +1,14 @@
 const scroller = document.getElementById('scroller')
-const formSection = document.getElementById('sidebar')
+const sidebar = document.getElementById('sidebar')
 
 scroller.addEventListener('click', function() {
-  console.log(window.innerWidth);
   let margin = 130
 
   if (window.innerWidth <= 560) {
     margin = 100
   }
-  const y = formSection.getBoundingClientRect().top + window.scrollY - margin;
+
+  const y = sidebar.getBoundingClientRect().top + window.scrollY - margin;
   window.scroll({
     top: y,
     behavior: 'smooth'
@@ -27,7 +27,7 @@ const scrollObserver = new IntersectionObserver(
   },
 )
 
-scrollObserver.observe(formSection)
+scrollObserver.observe(sidebar)
 
 
 

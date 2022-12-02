@@ -236,14 +236,6 @@
     gap: 44px
   }
 
-  /* .form_section {
-    display: block;
-  } */
-
-  /* .sidebar_wrapper {
-    display: none;
-  } */
-
   .sidebar_wrapper {
     position: relative;
     max-width: 100%;
@@ -265,15 +257,23 @@
   }
 
   .sidebar_form {
-    width: 45%;
+    width: 55%;
     gap: 35px;
   }
 
   .sidebar_sidetext {
     top: 220px;
-    bottom: 297px;
+    bottom: 294px;
     position: absolute;
-    right: 70px;
+    right: 78px;
+  }
+
+  .sidebar_title_container {
+    margin-bottom: 58px;
+  }
+
+  .sidebar_break_md {
+    display: inline;
   }
 
 }
@@ -282,6 +282,7 @@
   .header_wrapper {
     padding: 0 48px 0 48px;
   }
+
   .hero_section h1 {
     font-size: 80px;
     line-height: 80px;
@@ -323,39 +324,43 @@
   .core_section_list-container {
     gap: 95px;
   }
-/* 
-  .form_section {
-    padding: 160px 0 163px 47px;
+
+  .sidebar_wrapper {
+    padding: 160px 0 163px 50px;
   }
 
-  .form_top_dot {
+  .top_dot {
     top: 42px
   }
 
-  .form_break_line {
-    display: block;
-  }
-
-  .form_section_sidetext {
+  .sidebar_sidetext {
     top: 0px;
     bottom: 128px;
     right: 48px;
-  } */
+  }
+
+  .sidebar_break_sm {
+    display: block;
+  }
+
+  .sidebar_form {
+    width: 56%;
+    gap: 35px;
+  }
 
 }
 
-@media (max-width: 730px) {
-  /* .hero_section h1 {
-      font-size: 70px;
-      line-height: 70px;
-    } */
-}
 
 @media (max-width: 730px) {
-  /* .hero_section h1 {
+  .hero_section h1 {
       font-size: 65px;
       line-height: 65px;
-    } */
+    }
+
+    .sidebar_form {
+      width: 70%;
+      gap: 35px;
+    }
 }
 
 @media (max-width: 560px) {
@@ -476,50 +481,53 @@
     left: -2px;
 }
 
-  /* .form_section {
+  .sidebar_wrapper {
     padding: 155px 0 128px 15px;
   }
 
-  .form_top_dot {
-    top: 26px;
+
+  .top_dot {
+    top: 25px;
+    left: 28px;
   }
 
-  .form_bottom_dot {
-    bottom: 26px;
+  .bottom_dot {
+    bottom: 25px;
+    left: 28px;
   }
 
-  .form_section_form {
-    width: 80%;
+  .sidebar_form {
+    width: 100%;
   }
 
-  .form_section_title {
+  .sidebar_title {
     font-size: 32px;
     line-height: 40px;
   }
 
-  .form_section_sidetext {
+  .sidebar_sidetext {
     top: 0px;
-    bottom: 171px;
-    right: 16px;
+    bottom: 169px;
+    right: 13px;
     font-size: 9px;
     letter-spacing: 5px;
     line-height: 16px;
   }
 
-  .form_break_line {
-    display: inline;
-  } */
-
-  .mobile_form_break_line {
+  .sidebar_break_md {
     display: block;
+  }
+
+  .sidebar_break_sm {
+    display: inline;
   }
 
 }
 
 @media (max-width: 420px) {
-  /* .hero_section h1 {
+  .hero_section h1 {
     font-size: 45px;
     line-height: 50px;
-  } */
+  }
 }
 
