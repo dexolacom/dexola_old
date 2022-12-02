@@ -92,7 +92,7 @@
   padding: 0 0 5px 0;
 }
 
-.sidebar_input:hover, :focus {
+.sidebar_input:hover, .sidebar_input:focus {
   border-bottom: 1px solid #FFFFFA;
 }
 

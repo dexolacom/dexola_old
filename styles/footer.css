@@ -21,3 +21,8 @@
 .footer_logo {
   justify-self: flex-end;
 }
+
+.footer_link {
+  color: #FFFFFA;
+  text-decoration: none;
+}

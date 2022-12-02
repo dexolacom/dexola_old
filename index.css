@@ -62,9 +62,9 @@ ol[class] {
   list-style: none;
 }
 
-/* Элементы a, у которых нет класса, сбрасываем до дефолтных стилей */
-a:not([class]) {
-  text-decoration-skip-ink: auto;
+
+a, a:hover, a:active, a:visited, a:focus {
+  text-decoration:none;
 }
 
 /* Упрощаем работу с изображениями */

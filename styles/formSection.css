@@ -73,7 +73,7 @@
 }
 
 .form_section_input:hover,
-.form_section_form:focus {
+.form_section_input:focus {
   border-bottom: 1px solid #FFFFFA;
 }
 
