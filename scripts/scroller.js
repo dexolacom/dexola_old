@@ -1,15 +1,19 @@
-let scroller = document.getElementById('scroller')
-let parentHeigth = document.getElementById("scroller").parentNode.offsetHeight;
+const scroller = document.getElementById('scroller')
+const formSection = document.getElementById('form_section')
 
-  const formSection = document.getElementById('form_section')
+scroller.addEventListener('click', function() {
+  console.log(window.innerWidth);
+  let margin = 130
 
-  scroller.addEventListener('click', function() {
-    const y = formSection.getBoundingClientRect().top + window.scrollY - 130;
-    window.scroll({
-      top: y,
-      behavior: 'smooth'
-    });
-  })
+  if (window.innerWidth <= 560) {
+    margin = 100
+  }
+  const y = formSection.getBoundingClientRect().top + window.scrollY - margin;
+  window.scroll({
+    top: y,
+    behavior: 'smooth'
+  });
+})
 
 const scrollObserver = new IntersectionObserver(
   ([entry]) => {
