@@ -1,39 +1,115 @@
-const form = document.querySelector('.sidebar_form')
-const formInputs = document.querySelectorAll('.sidebar_input')
-const emailInput = document.querySelector('.email_input')
+const usernameEl = document.getElementById('nameInput');
+const emailEl = document.getElementById('emailInput');
+const companyEl = document.getElementById('companyInput');
+const textAreaEl = document.getElementById('messageInput');
+const form = document.getElementById('form');
 
-function validateEmail (email) {
-  const regex =
-/^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/
 
-  return regex.test(String(email).toLowerCase())
-}
+const checkUsername = () => {
+    let valid = false;
 
-form.onsubmit = function () {
-  const emailVal = emailInput?.value
-  const emptyInputs = Array.from(formInputs).filter(input => input?.value === '' && input?.id !== 'companyInput')
+    const min = 3,
+          max = 25;
 
-  formInputs.forEach(function (input) {
-    if (input?.value === '' && input?.id !== 'companyInput') {
-      input.classList.add('error')
-      setTimeout(function () {
-        input.classList.remove('error')
-      }, 2000)
+    const username = usernameEl.value.trim();
+
+    if (!isRequired(username)) {
+        showError(usernameEl, 'Username cannot be blank.');
+    } else if (!isBetween(username.length, min, max)) {
+        showError(usernameEl, `Username must be between ${min} and ${max} characters.`)
+    } else {
+        showSuccess(usernameEl);
+        valid = true;
     }
-  })
+    return valid;
+};
 
-  if (emptyInputs.length !== 0) {
-    console.log('inputs not filled')
-    return false
-  }
 
-  if (!validateEmail(emailVal)) {
-    console.log('email not valid')
-    emailInput.classList.add('error')
+const checkEmail = () => {
+    let valid = false;
+    const email = emailEl.value.trim();
+    if (!isRequired(email)) {
+        showError(emailEl, 'Email cannot be blank.');
+    } else if (!isEmailValid(email)) {
+        showError(emailEl, 'Email is not valid.')
+    } else {
+        showSuccess(emailEl);
+        valid = true;
+    }
+    return valid;
+};
+
+
+const isEmailValid = (email) => {
+    const re = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+    return re.test(String(email).toLowerCase());
+};
+
+const isRequired = value => value === '' ? false : true;
+const isBetween = (length, min, max) => length < min || length > max ? false : true;
+
+
+const showError = (input, message) => {
+    const inputContainer = input.parentElement;
+    input.classList.add('error')
+
+    const error = inputContainer.querySelector('.error_message');
+    error.innerText = message;
+
     setTimeout(function () {
-      emailInput.classList.remove('error')
+      input.classList.remove('error')
+      error.innerText = '';
     }, 2000)
-    return false
-  }
+};
 
+const showSuccess = (input) => {
+    const inputContainer = input.parentElement;
+    input.classList.remove('error')
+
+    const error = inputContainer.querySelector('.error_message');
+    error.innerText = '';
 }
+
+
+form.addEventListener('submit', function (e) {
+    // prevent the form submitting
+    e.preventDefault();
+
+    // validate fields
+    let isUsernameValid = checkUsername(),
+        isEmailValid = checkEmail()
+
+    let isFormValid = isUsernameValid &&
+        isEmailValid
+
+    // submit to the server if the form is valid
+    if (isFormValid) {
+
+    }
+});
+
+
+const debounce = (fn, delay = 500) => {
+    let timeoutId;
+    return (...args) => {
+        // cancel the previous timer
+        if (timeoutId) {
+            clearTimeout(timeoutId);
+        }
+        // setup a new timer
+        timeoutId = setTimeout(() => {
+            fn.apply(null, args)
+        }, delay);
+    };
+};
+
+form.addEventListener('input', debounce(function (e) {
+    switch (e.target.id) {
+        case 'username':
+            checkUsername();
+            break;
+        case 'email':
+            checkEmail();
+            break;
+    }
+}));

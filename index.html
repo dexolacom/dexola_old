@@ -109,15 +109,17 @@
         <h2 class='sidebar_title'>Got a project <span class='sidebar_break_md'>idea <span class='sidebar_break_sm'>in mind?</span></span></h2>
         <span class='sidebar_subtitle'>Let’s talk</span>
       </div>
-      <form class='sidebar_form'>
+      <form class='sidebar_form' id="form">
         <div class='sidebar_input_container'>
           <input id='nameInput' class='sidebar_input' type='text' placeholder='name' />
           <label class='sidebar_label' for='nameInput'>Name</label>
+          <span class="error_message"></span>
         </div>
 
         <div class='sidebar_input_container'>
           <input id='emailInput' class='sidebar_input email_input' type='text' placeholder='email'/>
           <label class='sidebar_label' for='emailInput'>Email / Telegram</label>
+          <span class="error_message"></span>
         </div>
 
         <div class='sidebar_input_container'>
@@ -128,6 +130,7 @@
         <div class='sidebar_input_container'>
           <label class='sidebar_textarea_label' for='messageInput'>Message</label>
           <textarea
+          id="messageInput"
           class='sidebar_input textarea'
           placeholder='Tell us about your needs and we’ll set up a discovery call with one of our subject matter experts'></textarea>
         </div>

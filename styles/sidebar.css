@@ -194,3 +194,14 @@ input::placeholder {
 .sidebar_break_md {
   display: block;
 }
+
+.error_message {
+  position: relative;
+  font-family: 'Cera Pro';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 11px;
+  line-height: 16px;
+  color: #EA4D50;
+  float: right;
+}
