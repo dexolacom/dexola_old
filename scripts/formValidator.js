@@ -24,6 +24,20 @@ const checkUsername = () => {
     return valid;
 };
 
+const checkTextArea = () => {
+    let valid = false
+    const textArea = textAreaEl.value.trim()
+
+    if (!isRequired(textArea)) {
+        showError(textAreaEl, 'Message cannot be blank.')
+    } else {
+        showSuccess(textAreaEl)
+        valid = true
+    }
+
+    return valid
+}
+
 
 const checkEmail = () => {
     let valid = false;

@@ -159,9 +159,9 @@ h4 {
 }
 
 @media (max-width: 1366px) {
-  .content_wrapper {
+  /* .content_wrapper {
       background-image: url("./assets/img/1366_background.png");
-  }
+  } */
 }
 
 @media (max-width: 1250px) {

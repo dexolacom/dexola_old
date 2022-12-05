@@ -2,7 +2,6 @@
   max-width: 659px;
   width: 100%;
   height: 1080px;
-  /* padding: 262px 139px; */
   position: sticky;
   top: 0;
   height: 1080px;
@@ -10,6 +9,7 @@
 
 .sidebar_content {
   padding: 262px 139px;
+  position: relative;
 }
 
 .sidebar_dot {
@@ -189,8 +189,8 @@ input::placeholder {
   writing-mode: vertical-lr;
   display: inline;  
   transform: rotate(180deg);
-  top: 220px;
-  bottom: 227px;
+  top: 0;
+  bottom: 212px;
   position: absolute;
   right: 24px;
 }
@@ -213,12 +213,8 @@ input::placeholder {
 .sidebar_modal_header {
   display: none;
   width: 100%;
-  /* max-width: 1024px; */
-  /* display: flex; */
   align-items: center;
   justify-content: space-between;
-  position: absolute;
-  top: 0;
   padding: 0 66px;
   height: 96px;
 }

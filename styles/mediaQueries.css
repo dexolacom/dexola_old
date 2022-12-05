@@ -10,7 +10,7 @@
   }
 
   .sidebar_content {
-    padding: 148px 0 0 126px;
+    padding: 148px 0 148px 126px;
   }
 
   .sidebar_input_container {
@@ -18,9 +18,9 @@
   }
 
   .sidebar_sidetext {
-    top: 121px;
-    bottom: 147px;
-    right: -18px;
+    top: 0px;
+    bottom: 88px;
+    right: -13px;
   }
 
   .top_dot {
@@ -28,7 +28,7 @@
   }
 
   .bottom_dot {
-    bottom: 57px;
+    bottom: 0;
   }
   
   .hero_section h1{
@@ -108,7 +108,7 @@
   }
 
   .sidebar_content {
-    padding: 105px 0 0 84px;
+    padding: 116px 78px 100px 78px;
   }
 
   .sidebar_title_container {
@@ -126,16 +126,18 @@
 
   .sidebar_sidetext {
     top: 0px;
-    bottom: 81px;
-    right: 7px;
+    bottom: 46px;
+    right: 15px;
   }
 
   .top_dot {
-    top: 36px;
+    top: 45px;
+    left: 43px;
   }
 
   .bottom_dot {
-    bottom: 57px;
+    bottom: 21px;
+    left: 43px;
   }
 
 
@@ -248,8 +250,8 @@
     position: relative;
     max-width: 100%;
     height: 100%;
-    /* padding: 345px 66px 369px 66px; */
   }
+
 
   .sidebar_content {
     padding: 345px 66px 369px 66px;
@@ -261,11 +263,13 @@
   }
 
   .top_dot {
-    top: 58px;
+    top: 51px;
+    left: 80px;
   }
 
   .bottom_dot {
-    bottom: 58px;
+    bottom: 51px;
+    left: 80px;
   }
 
   .sidebar_form {
@@ -274,10 +278,10 @@
   }
 
   .sidebar_sidetext {
-    top: 220px;
-    bottom: 294px;
+    top: 0;
+    bottom: 281px;
     position: absolute;
-    right: 78px;
+    right: 74px;
   }
 
   .sidebar_title_container {
