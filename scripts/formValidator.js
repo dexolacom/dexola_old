@@ -24,11 +24,11 @@ const checkUsername = () => {
     return valid;
 };
 
-const checkTextArea = () => {
+const checkMessage = () => {
     let valid = false
-    const textArea = textAreaEl.value.trim()
+    const message = textAreaEl.value.trim()
 
-    if (!isRequired(textArea)) {
+    if (!isRequired(message)) {
         showError(textAreaEl, 'Message cannot be blank.')
     } else {
         showSuccess(textAreaEl)
@@ -91,10 +91,11 @@ form.addEventListener('submit', function (e) {
 
     // validate fields
     let isUsernameValid = checkUsername(),
-        isEmailValid = checkEmail()
+        isEmailValid = checkEmail(),
+        isMessageValid = checkMessage()
 
     let isFormValid = isUsernameValid &&
-        isEmailValid
+        isEmailValid && isMessageValid
 
     // submit to the server if the form is valid
     if (isFormValid) {
