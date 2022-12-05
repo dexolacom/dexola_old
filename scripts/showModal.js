@@ -3,7 +3,6 @@ const sidebar = document.getElementById('sidebar')
 const header = document.getElementById('sidebar_header')
 const scrollHeight =document.getElementsByClassName('main_wrapper')[0].offsetHeight
 const mainWrapper = document.getElementsByClassName('main_wrapper')[0]
-
 const cross = document.getElementsByClassName('sidebar_cross')[0]
 
 scroller.addEventListener('click', () => {
