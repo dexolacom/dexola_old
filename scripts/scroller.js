@@ -1,19 +1,19 @@
 const scroller = document.getElementById('scroller')
 const sidebar = document.getElementById('sidebar')
 
-scroller.addEventListener('click', function() {
-  let margin = 130
+// scroller.addEventListener('click', function() {
+//   let margin = 130
 
-  if (window.innerWidth <= 560) {
-    margin = 100
-  }
+//   if (window.innerWidth <= 560) {
+//     margin = 100
+//   }
 
-  const y = sidebar.getBoundingClientRect().top + window.scrollY - margin;
-  window.scroll({
-    top: y,
-    behavior: 'smooth'
-  });
-})
+//   const y = sidebar.getBoundingClientRect().top + window.scrollY - margin;
+//   window.scroll({
+//     top: y,
+//     behavior: 'smooth'
+//   });
+// })
 
 const scrollObserver = new IntersectionObserver(
   ([entry]) => {

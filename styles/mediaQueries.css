@@ -2,11 +2,15 @@
 @media (max-width: 1681px) {
   .sidebar_wrapper {
     max-width: 537px;
-    padding: 148px 0 0 126px;
+    /* padding: 148px 0 0 126px; */
     height: 900px;
     position: sticky;
     top: 0;
     right: 0;
+  }
+
+  .sidebar_content {
+    padding: 148px 0 0 126px;
   }
 
   .sidebar_input_container {
@@ -96,11 +100,15 @@
 @media (max-width: 1440px) {
   .sidebar_wrapper {
     max-width: 450px;
-    padding: 105px 0 0 84px;
+    /* padding: 105px 0 0 84px; */
     height: 768px;
     position: sticky;
     top: 0;
     right: 0;
+  }
+
+  .sidebar_content {
+    padding: 105px 0 0 84px;
   }
 
   .sidebar_title_container {
@@ -240,7 +248,11 @@
     position: relative;
     max-width: 100%;
     height: 100%;
-    padding: 345px 0 369px 66px;
+    /* padding: 345px 66px 369px 66px; */
+  }
+
+  .sidebar_content {
+    padding: 345px 66px 369px 66px;
   }
 
   .sidebar_title {
@@ -326,7 +338,11 @@
   }
 
   .sidebar_wrapper {
-    padding: 160px 0 163px 50px;
+    /* padding: 160px 50px 163px 50px; */
+  }
+
+  .sidebar_content {
+    padding: 160px 50px 163px 50px;
   }
 
   .top_dot {
@@ -482,7 +498,11 @@
 }
 
   .sidebar_wrapper {
-    padding: 155px 0 128px 15px;
+    /* padding: 155px 15px 128px 15px; */
+  }
+
+  .sidebar_content {
+    padding: 155px 15px 128px 15px;
   }
 
 
