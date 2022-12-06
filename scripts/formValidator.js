@@ -114,7 +114,7 @@ form.addEventListener("submit", function (e) {
 });
 
 const sendEmail = async (values) => {
-  const API_URL = "http://localhost:5001";
+  const API_URL = "http://dexolaapi-env.eba-wjf7rgnv.us-east-1.elasticbeanstalk.com";
   let response = await fetch(`${API_URL}/api/email/send`, {
     method: "POST",
     headers: {
