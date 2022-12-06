@@ -3,6 +3,21 @@ const emailEl = document.getElementById("emailInput");
 const companyEl = document.getElementById("companyInput");
 const textAreaEl = document.getElementById("messageInput");
 const form = document.getElementById("form");
+const sendButton = document.getElementById('send_button')
+const gotButton = document.getElementById('got_button')
+const successWrapper = document.getElementById('success_wrapper')
+const formWrapper = document.getElementById('form_wrapper')
+
+gotButton.addEventListener('click', function () {
+  formWrapper.style = 'display: block;'
+  successWrapper.style = 'display: none;'
+})
+
+
+const hideForm = () => {
+  formWrapper.style = 'display: none;'
+  successWrapper.style = 'display: flex;'
+}
 
 const checkUsername = () => {
   let valid = false;
@@ -13,7 +28,7 @@ const checkUsername = () => {
   const username = usernameEl.value.trim();
 
   if (!isRequired(username)) {
-    showError(usernameEl, "Username cannot be blank.");
+    showError(usernameEl, "Name cannot be blank.");
   } else if (!isBetween(username.length, min, max)) {
     showError(
       usernameEl,
@@ -105,11 +120,10 @@ form.addEventListener("submit", function (e) {
 
   // submit to the server if the form is valid
   if (isFormValid) {
-    console.log("click form");
-    console.log(values);
     // Send email
     sendEmail(values);
     form.reset();
+    hideForm()
   }
 });
 

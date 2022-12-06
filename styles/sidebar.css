@@ -197,10 +197,15 @@ input::placeholder {
   writing-mode: vertical-lr;
   display: inline;  
   transform: rotate(180deg);
-  top: 0;
-  bottom: 212px;
-  position: absolute;
   right: 24px;
+  /* top: 0;
+  bottom: 212px; */
+  position: absolute;
+  margin: auto 0;
+  top: 0;
+  bottom: 0;
+  /* top: 50%;
+  transform: translate(-50%, -50%); */
 }
 
 .sidebar_break_md {
@@ -229,10 +234,9 @@ input::placeholder {
 
 /* success  message*/
 .sidebar_success {
-  display: flex;
+  display: none;
   flex-direction: column;
   max-width: 380px;
-  display: none;
 }
 
 .sidebar_success_logo {
