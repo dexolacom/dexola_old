@@ -1,130 +1,162 @@
-const usernameEl = document.getElementById('nameInput');
-const emailEl = document.getElementById('emailInput');
-const companyEl = document.getElementById('companyInput');
-const textAreaEl = document.getElementById('messageInput');
-const form = document.getElementById('form');
-
+const usernameEl = document.getElementById("nameInput");
+const emailEl = document.getElementById("emailInput");
+const companyEl = document.getElementById("companyInput");
+const textAreaEl = document.getElementById("messageInput");
+const form = document.getElementById("form");
 
 const checkUsername = () => {
-    let valid = false;
+  let valid = false;
 
-    const min = 3,
-          max = 25;
+  const min = 3,
+    max = 25;
 
-    const username = usernameEl.value.trim();
+  const username = usernameEl.value.trim();
 
-    if (!isRequired(username)) {
-        showError(usernameEl, 'Username cannot be blank.');
-    } else if (!isBetween(username.length, min, max)) {
-        showError(usernameEl, `Username must be between ${min} and ${max} characters.`)
-    } else {
-        showSuccess(usernameEl);
-        valid = true;
-    }
-    return valid;
+  if (!isRequired(username)) {
+    showError(usernameEl, "Username cannot be blank.");
+  } else if (!isBetween(username.length, min, max)) {
+    showError(
+      usernameEl,
+      `Username must be between ${min} and ${max} characters.`
+    );
+  } else {
+    showSuccess(usernameEl);
+    valid = true;
+  }
+  return valid;
 };
 
 const checkMessage = () => {
-    let valid = false
-    const message = textAreaEl.value.trim()
+  let valid = false;
+  const message = textAreaEl.value.trim();
 
-    if (!isRequired(message)) {
-        showError(textAreaEl, 'Message cannot be blank.')
-    } else {
-        showSuccess(textAreaEl)
-        valid = true
-    }
+  if (!isRequired(message)) {
+    showError(textAreaEl, "Message cannot be blank.");
+  } else {
+    showSuccess(textAreaEl);
+    valid = true;
+  }
 
-    return valid
-}
-
+  return valid;
+};
 
 const checkEmail = () => {
-    let valid = false;
-    const email = emailEl.value.trim();
-    if (!isRequired(email)) {
-        showError(emailEl, 'Email cannot be blank.');
-    } else if (!isEmailValid(email)) {
-        showError(emailEl, 'Email is not valid.')
-    } else {
-        showSuccess(emailEl);
-        valid = true;
-    }
-    return valid;
+  let valid = false;
+  const email = emailEl.value.trim();
+  if (!isRequired(email)) {
+    showError(emailEl, "Email cannot be blank.");
+  } else if (!isEmailValid(email)) {
+    showError(emailEl, "Email is not valid.");
+  } else {
+    showSuccess(emailEl);
+    valid = true;
+  }
+  return valid;
 };
-
 
 const isEmailValid = (email) => {
-    const re = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
-    return re.test(String(email).toLowerCase());
+  const re =
+    /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+  return re.test(String(email).toLowerCase());
 };
 
-const isRequired = value => value === '' ? false : true;
-const isBetween = (length, min, max) => length < min || length > max ? false : true;
-
+const isRequired = (value) => (value === "" ? false : true);
+const isBetween = (length, min, max) =>
+  length < min || length > max ? false : true;
 
 const showError = (input, message) => {
-    const inputContainer = input.parentElement;
-    input.classList.add('error')
+  const inputContainer = input.parentElement;
+  input.classList.add("error");
 
-    const error = inputContainer.querySelector('.error_message');
-    error.innerText = message;
+  const error = inputContainer.querySelector(".error_message");
+  error.innerText = message;
 
-    setTimeout(function () {
-      input.classList.remove('error')
-      error.innerText = '';
-    }, 2000)
+  setTimeout(function () {
+    input.classList.remove("error");
+    error.innerText = "";
+  }, 2000);
 };
 
 const showSuccess = (input) => {
-    const inputContainer = input.parentElement;
-    input.classList.remove('error')
+  const inputContainer = input.parentElement;
+  input.classList.remove("error");
 
-    const error = inputContainer.querySelector('.error_message');
-    error.innerText = '';
-}
-
-
-form.addEventListener('submit', function (e) {
-    // prevent the form submitting
-    e.preventDefault();
-
-    // validate fields
-    let isUsernameValid = checkUsername(),
-        isEmailValid = checkEmail(),
-        isMessageValid = checkMessage()
-
-    let isFormValid = isUsernameValid &&
-        isEmailValid && isMessageValid
-
-    // submit to the server if the form is valid
-    if (isFormValid) {
-
-    }
-});
-
-
-const debounce = (fn, delay = 500) => {
-    let timeoutId;
-    return (...args) => {
-        // cancel the previous timer
-        if (timeoutId) {
-            clearTimeout(timeoutId);
-        }
-        // setup a new timer
-        timeoutId = setTimeout(() => {
-            fn.apply(null, args)
-        }, delay);
-    };
+  const error = inputContainer.querySelector(".error_message");
+  error.innerText = "";
 };
 
-form.addEventListener('input', debounce(function (e) {
-    switch (e.target.id) {
-        case 'username':
-            checkUsername();
-            break;
-        case 'email':
-            checkEmail();
-            break;
+form.addEventListener("submit", function (e) {
+  // prevent the form submitting
+  e.preventDefault();
+
+  // validate fields
+  let isUsernameValid = checkUsername(),
+    isEmailValid = checkEmail(),
+    isMessageValid = checkMessage();
+
+  let isFormValid = isUsernameValid && isEmailValid && isMessageValid;
+
+  let values = {
+    name: usernameEl.value.trim(),
+    email: emailEl.value.trim(),
+    company: companyEl.value.trim(),
+    message: textAreaEl.value.trim(),
+  }
+
+  // submit to the server if the form is valid
+  if (isFormValid) {
+    console.log("click form");
+    console.log(values);
+    // Send email
+    sendEmail(values);
+    form.reset();
+  }
+});
+
+const sendEmail = async (values) => {
+  const API_URL = "http://localhost:5001";
+  let response = await fetch(`${API_URL}/api/email/send`, {
+    method: "POST",
+    headers: {
+      "Content-Type": "application/json;charset=utf-8",
+    },
+    body: JSON.stringify(values),
+  });
+
+  await response
+    .json()
+    .then((res) => {
+      console.log(res);
+    })
+    .catch((err) => {
+      console.error(err.message);
+    });
+};
+
+const debounce = (fn, delay = 500) => {
+  let timeoutId;
+  return (...args) => {
+    // cancel the previous timer
+    if (timeoutId) {
+      clearTimeout(timeoutId);
     }
-}));
+    // setup a new timer
+    timeoutId = setTimeout(() => {
+      fn.apply(null, args);
+    }, delay);
+  };
+};
+
+form.addEventListener(
+  "input",
+  debounce(function (e) {
+    switch (e.target.id) {
+      case "username":
+        checkUsername();
+        break;
+      case "email":
+        checkEmail();
+        break;
+    }
+  })
+);
