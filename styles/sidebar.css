@@ -38,10 +38,11 @@
   font-size: 40px;
   line-height: 48px;
   text-transform: uppercase;
-  background: linear-gradient(110deg, #06C412 0%, #CBFF01 17.63%, #EC6D33 63.65%, #CA3D2D 58.63%);
+  background: linear-gradient(164.64deg, #6BC406 0%, #CBFF01 40.63%, #EC6D33 75.65%, #CA3D2D 104.63%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   margin-bottom: 14px;
+  background-clip: text;
 }
 
 .sidebar_subtitle {

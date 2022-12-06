@@ -262,6 +262,11 @@
   .sidebar_title {
     font-size: 40px;
     line-height: 48px;
+    max-width: 769px;
+    background: linear-gradient(164.04deg, #06C412 10.93%, #CBFF01 41.39%, #EC6D33 67.65%, #CA3D2D 89.37%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
   }
 
   .top_dot {
@@ -343,8 +348,12 @@
     gap: 95px;
   }
 
-  .sidebar_wrapper {
-    /* padding: 160px 50px 163px 50px; */
+  .sidebar_title {
+    background:linear-gradient(164.65deg, #06C412 11.08%, #CBFF01 36.95%, #EC6D33 59.25%, #CA3D2D 77.7%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    max-width: 556px;
   }
 
   .sidebar_content {
@@ -503,10 +512,6 @@
     left: -2px;
 }
 
-  .sidebar_wrapper {
-    /* padding: 155px 15px 128px 15px; */
-  }
-
   .sidebar_content {
     padding: 155px 15px 128px 15px;
   }
@@ -529,7 +534,13 @@
   .sidebar_title {
     font-size: 32px;
     line-height: 40px;
+    max-width: 320px;
+    background: linear-gradient(164.04deg, #06C412 10.93%, #CBFF01 41.39%, #EC6D33 67.65%, #CA3D2D 89.37%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
   }
+
 
   .sidebar_sidetext {
     top: 0px;
