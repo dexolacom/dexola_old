@@ -117,25 +117,26 @@
       </div>
       <form class='sidebar_form' id="form">
         <div class='sidebar_input_container'>
-          <input id='nameInput' class='sidebar_input' type='text' placeholder='name' />
+          <input id='nameInput' class='sidebar_input' type='text' placeholder='name' maxlength="22"/>
           <label class='sidebar_label' for='nameInput'>Name</label>
           <span class="error_message"></span>
         </div>
 
         <div class='sidebar_input_container'>
-          <input id='emailInput' class='sidebar_input email_input' type='text' placeholder='email'/>
+          <input id='emailInput' class='sidebar_input email_input' type='text' placeholder='email' maxlength="50"/>
           <label class='sidebar_label' for='emailInput'>Email / Telegram</label>
           <span class="error_message"></span>
         </div>
 
         <div class='sidebar_input_container'>
-          <input id='companyInput' class='sidebar_input' type='text' placeholder='company'/>
+          <input id='companyInput' class='sidebar_input' type='text' placeholder='company' maxlength="22"/>
           <label class='sidebar_label' for='companyInput'>Company (optional)</label>
         </div>
 
         <div class='sidebar_input_container'>
           <label class='sidebar_textarea_label' for='messageInput'>Message</label>
           <textarea
+          maxlength="1000"
           id="messageInput"
           class='sidebar_input textarea'
           placeholder='Tell us about your needs and we’ll set up a discovery call with one of our subject matter experts'></textarea>
