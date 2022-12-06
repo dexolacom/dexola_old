@@ -3,6 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
   <title>Dexola</title>
   <link rel="stylesheet" href="./index.css">
   <script type="module" src="scripts/changeHeaderBackground.js"></script>
@@ -110,7 +111,24 @@
         <div class='sidebar_dot top_dot'></div>
         <div class='sidebar_dot bottom_dot'></div>
       <div class='sidebar_content'>
-        <p class='sidebar_sidetext'>Crack the innovation code. Drive smarter futures.</p>
+      <div class='sidebar_dot top_dot'></div>
+      <div class='sidebar_dot bottom_dot'></div>
+      <div class='sidebar_title_container'>
+        <h2 class='sidebar_title'>Got a project <span class='sidebar_break_md'>idea <span class='sidebar_break_sm'>in mind?</span></span></h2>
+        <span class='sidebar_subtitle'>Let’s talk</span>
+      </div>
+      <form class='sidebar_form' id="form" method="post">
+        <div class='sidebar_input_container'>
+          <input id='nameInput' class='sidebar_input' type='text' placeholder='name' maxlength="22"/>
+          <label class='sidebar_label' for='nameInput'>Name</label>
+          <span class="error_message"></span>
+        </div>
+
+        <div class='sidebar_input_container'>
+          <input id='emailInput' class='sidebar_input email_input' type='text' placeholder='email' maxlength="50"/>
+          <label class='sidebar_label' for='emailInput'>Email / Telegram</label>
+          <span class="error_message"></span>
+        </div>
 
           <div class='sidebar_success'>
             <img class='sidebar_success_logo' src='assets/img/sender.svg'>
