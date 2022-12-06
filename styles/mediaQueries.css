@@ -30,24 +30,7 @@
   .bottom_dot {
     bottom: 0;
   }
-  
-  .hero_section h1{
-    font-size: 88px;
-    line-height: 88px;
-  }
 
-  .hero_section_title-right {
-    margin-left: 123px;
-  } 
-
-  .hero_section_text {
-    font-size: 14px;
-    line-height: 24px;
-  }
-
-  .hero_section_text-container {
-    gap: 53px;
-  }
 
   .content_section {
     margin-left: 122px;
@@ -150,26 +133,7 @@
     padding: 0 32px 0 52px;
   }
 
-  .hero_section {
-    margin-top: 59px;
-    margin-bottom: 39px
-  }
 
-  .hero_section_title-right {
-    margin-left: 107px;
-  } 
-
-  .hero_section_text-container {
-    gap: 55px;
-  }
-
-  .break_line {
-    display: inline;
-  }
-
-  .break_line_md {
-    display: block;
-  }
 
   .content_section {
     margin-left: 108px;
@@ -213,26 +177,7 @@
     max-width: 1250px;
   }
 
-  .hero_section {
-    margin-top: 69px;
-    margin-bottom: 55px;
-  }
 
-  .break_line {
-    display: block
-  }
-
-  .break_line_md {
-    display: inline;
-  }
-
-  .hero_section_title-right {
-    margin-left: 151px;
-  }
-
-  .hero_section_text-container {
-    gap: 135px;
-  }
 
   .content_section {
     margin-left: 150px;
@@ -320,22 +265,7 @@
     max-width: 470px;
   }
 
-  .hero_section h1 {
-    font-size: 80px;
-    line-height: 80px;
-  }
 
-  .hero_section_title-right {
-    margin-left: 118px;
-  }
-
-  .hero_section {
-    margin-top: 72px;
-  }
-
-  .hero_section_text-container {
-    gap: 32px;
-  }
 
   .content_section {
     margin-left: 117px;
@@ -432,40 +362,7 @@
     line-height: 14px;
   }
 
-  .hero_section {
-    margin-top: 80px;
-    margin-bottom: 37px;
-  }
 
-  .hero_section h1 {
-    font-size: 48px;
-    line-height: 56px;
-  }
-
-  .hero_section_title-right {
-    margin-left: 70px;
-  } 
-
-  .hero_section_text {
-    display: none;
-  }
-
-  .hero_section_text-mobile {
-    display: grid;
-    font-size: 12px;
-    line-height: 18px;
-    font-weight: 600;
-    letter-spacing: 1px;
-    text-transform: uppercase;
-    background: linear-gradient(172deg, #06C412 14.08%, #CBFF01 47.44%, #EC6D33 76.2%, #CA3D2D 99.99%);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    margin-top: 12px;
-  }
-
-  .hero_section_text-container {
-    gap: 35px;
-  }
 
   .content_section {
     margin-left: 70px;
@@ -605,18 +502,8 @@
 
 }
 
-@media (max-width: 420px) {
-  .hero_section h1 {
-    font-size: 45px;
-    line-height: 50px;
-  }
-}
 
 @media (max-width: 390px) {
-  .hero_section h1 {
-    font-size: 40px;
-    line-height: 45px;
-  }
 
   .hero_section_text-mobile {
     font-size: 10px;
@@ -634,9 +521,6 @@
 }
 
 @media (max-width: 350px) {
-  .hero_section h1 {
-    font-size: 35px;
-  }
 
   .content_section_second_block-text {
     font-size: 22px;
