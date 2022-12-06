@@ -26,3 +26,9 @@
   color: #FFFFFA;
   text-decoration: none;
 }
+
+@media (max-width: 1681px) {
+  .footer {
+    max-width: 942px;
+  }
+}

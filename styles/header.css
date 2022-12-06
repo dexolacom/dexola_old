@@ -34,8 +34,37 @@
   display: block;
 }
 
-@media (max-width: 1681px) {}
-@media (max-width: 1440px) {}
-@media (max-width: 1250px) {}
-@media (max-width: 850px) {}
-@media (max-width: 560px) {}
+@media (max-width: 1440px) {
+  .header_wrapper {
+    padding: 0 32px 0 52px;
+  }
+}
+@media (max-width: 1250px) {
+  .header_wrapper {
+    padding: 0 72px 0 66px;
+    max-width: 1250px;
+  }
+
+}
+@media (max-width: 850px) {
+  .header_wrapper {
+    padding: 0 48px 0 48px;
+  }
+}
+
+@media (max-width: 560px) {
+  .header_wrapper {
+    padding: 0 16px;
+    height: 56px;
+  }
+
+  .header_logo {
+    width: 96px;
+    height: 21px;
+  }
+
+  .header_text {
+    font-size: 9px;
+    line-height: 14px;
+  }
+}
