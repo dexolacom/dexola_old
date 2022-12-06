@@ -121,6 +121,7 @@ const sendEmail = async (values) => {
       "Content-Type": "application/json;charset=utf-8",
     },
     body: JSON.stringify(values),
+    referrerPolicy: "unsafe_url" 
   });
 
   await response
