@@ -348,6 +348,10 @@
     gap: 95px;
   }
 
+  .sidebar_modal_header {
+    padding: 0 50px;
+  }
+
   .sidebar_title {
     background:linear-gradient(164.65deg, #06C412 11.08%, #CBFF01 36.95%, #EC6D33 59.25%, #CA3D2D 77.7%);
     -webkit-background-clip: text;
@@ -541,6 +545,15 @@
     background-clip: text;
   }
 
+  .sidebar_modal_header {
+    padding: 0 16px;
+    height: 56px;
+  }
+
+  .sidebar_cross {
+    height: 13px;
+    width: 13px;
+  }
 
   .sidebar_sidetext {
     top: 0px;
