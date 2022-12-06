@@ -5,11 +5,16 @@ const scrollHeight =document.getElementsByClassName('main_wrapper')[0].offsetHei
 const mainWrapper = document.getElementsByClassName('main_wrapper')[0]
 const cross = document.getElementsByClassName('sidebar_cross')[0]
 
+// temp
+const sideText = document.getElementsByClassName('sidebar_sidetext')[0]
+// 
+
 scroller.addEventListener('click', () => {
   sidebar.style.top = '1000px'
 
   setTimeout(() => {
-    sidebar.style = `position: fixed; overflow-y: auto;`
+    sidebar.style = `position: fixed; overflow-y: auto; height: 100%;`
+    sideText.style = 'top: 50%; transform: translate(-50%, -50%); height: 100%;'
     document.body.style = 'overflow: hidden;'
   }, 200)
 
@@ -22,6 +27,7 @@ cross.addEventListener('click', () => {
 
   setTimeout(() => {
     sidebar.style = ''
+    sideText.style = ''
   }, 200)
   
   header.style.display = 'none'
