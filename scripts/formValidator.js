@@ -70,9 +70,14 @@ const checkEmail = () => {
 };
 
 const isEmailValid = (email) => {
-  const re =
-    /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
-  return re.test(String(email).toLowerCase());
+  const telegramRe = /@[a-zA-Z0-9]*/gm
+  const emailRe = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+    
+    
+  return (
+    emailRe.test(String(email).toLowerCase()) ||
+    telegramRe.test(String(email).toLowerCase())
+  )
 };
 
 const isRequired = (value) => (value === "" ? false : true);
@@ -121,8 +126,9 @@ form.addEventListener("submit", function (e) {
   // submit to the server if the form is valid
   if (isFormValid) {
     // Send email
-    sendEmail(values);
-    form.reset();
+    // sendEmail(values);
+    // form.reset();
+    console.log(isEmailValid)
     hideForm()
   }
 });
