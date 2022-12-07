@@ -30,71 +30,6 @@
   .bottom_dot {
     bottom: 0;
   }
-  
-  .hero_section h1{
-    font-size: 88px;
-    line-height: 88px;
-  }
-
-  .hero_section_title-right {
-    margin-left: 123px;
-  } 
-
-  .hero_section_text {
-    font-size: 14px;
-    line-height: 24px;
-  }
-
-  .hero_section_text-container {
-    gap: 53px;
-  }
-
-  .content_section {
-    margin-left: 122px;
-  }
-
-  .content_section_first_block-text {
-    font-size: 20px;
-    line-height: 32px;
-  }
-
-  .content_section_second_block {
-     margin-bottom: 32px;
-  }
-
-  .content_section_second_block-text {
-    font-size: 32px;
-    line-height: 40px;
-  }
-
-  .content_section_third_block-text {
-    font-size: 18px;
-    line-height: 28px;
-  }
-
-  .core_section {
-    margin: 0 0 30px 125px;
-  }
-
-  .core_section_title {
-    font-size: 14px;
-    line-height: 24px;
-  }
-
-  .core_section_list-item {
-    font-size: 16px;
-    line-height: 20px;
-  }
-
-  .core_section_list-container {
-    gap: 115px
-  }
-
-  .footer {
-    max-width: 942px;
-  }
-
-
 }
 
 @media (max-width: 1440px) {
@@ -145,114 +80,11 @@
     left: 43px;
   }
 
-
-  .header_wrapper {
-    padding: 0 32px 0 52px;
-  }
-
-  .hero_section {
-    margin-top: 59px;
-    margin-bottom: 39px
-  }
-
-  .hero_section_title-right {
-    margin-left: 107px;
-  } 
-
-  .hero_section_text-container {
-    gap: 55px;
-  }
-
-  .break_line {
-    display: inline;
-  }
-
-  .break_line_md {
-    display: block;
-  }
-
-  .content_section {
-    margin-left: 108px;
-    margin-right: 105px;
-  }
-
-  .content_section_first_block {
-    margin-bottom: 34px;
-  }
-
-  .content_section_arrow {
-    margin-bottom: 88px;
-  }
-
-  .content_section_third_block {
-    margin-bottom: 88px;
-  }
-
-  .core_section {
-    margin: 0 0 30px 102px;
-  }
-
-  .core_section_list-container {
-    gap: 72px;
-  }
 }
 
 @media (max-width: 1250px) {
-  .scroller {
-    display: flex;
-    align-items: center;
-    justify-content: flex-start;
-  }
-
   .sidebar_success {
     max-width: 730px;
-  }
-
-  .header_wrapper {
-    padding: 0 72px 0 66px;
-    max-width: 1250px;
-  }
-
-  .hero_section {
-    margin-top: 69px;
-    margin-bottom: 55px;
-  }
-
-  .break_line {
-    display: block
-  }
-
-  .break_line_md {
-    display: inline;
-  }
-
-  .hero_section_title-right {
-    margin-left: 151px;
-  }
-
-  .hero_section_text-container {
-    gap: 135px;
-  }
-
-  .content_section {
-    margin-left: 150px;
-    margin-right: 0px;
-  }
-
-  .content_section_first_block {
-    margin-bottom: 57px;
-  }
-
-  .content_section_arrow {
-    margin-bottom: 95px;
-  }
-
-  .core_section {
-    margin: 0px 0 30px 155px;
-  }
-
-  .core_section_list-container {
-    gap: 44px
   }
 
   .sidebar_wrapper {
@@ -312,54 +144,8 @@
 }
 
 @media (max-width: 850px) {
-  .header_wrapper {
-    padding: 0 48px 0 48px;
-  }
-
   .sidebar_success {
     max-width: 470px;
-  }
-
-  .hero_section h1 {
-    font-size: 80px;
-    line-height: 80px;
-  }
-
-  .hero_section_title-right {
-    margin-left: 118px;
-  }
-
-  .hero_section {
-    margin-top: 72px;
-  }
-
-  .hero_section_text-container {
-    gap: 32px;
-  }
-
-  .content_section {
-    margin-left: 117px;
-  }
-
-  .content_section_first_block {
-    margin-bottom: 80px;
-  }
-
-  .content_section_arrow {
-    margin-bottom: 88px;
-  }
-
-  .core_section {
-    margin: 0px 0 30px -4px;
-  }
-
-  .core_section_list li:before {
-    top: -11px;
-    left: 11px;
-  }
-
-  .core_section_list-container {
-    gap: 95px;
   }
 
   .sidebar_modal_header {
@@ -405,11 +191,6 @@
 
 
 @media (max-width: 730px) {
-  .hero_section h1 {
-      font-size: 65px;
-      line-height: 65px;
-    }
-
     .sidebar_form {
       width: 70%;
       gap: 35px;
@@ -417,123 +198,6 @@
 }
 
 @media (max-width: 560px) {
-  .header_wrapper {
-    padding: 0 16px;
-    height: 56px;
-  }
-
-  .header_logo {
-    width: 96px;
-    height: 21px;
-  }
-
-  .header_text {
-    font-size: 9px;
-    line-height: 14px;
-  }
-
-  .hero_section {
-    margin-top: 80px;
-    margin-bottom: 37px;
-  }
-
-  .hero_section h1 {
-    font-size: 48px;
-    line-height: 56px;
-  }
-
-  .hero_section_title-right {
-    margin-left: 70px;
-  } 
-
-  .hero_section_text {
-    display: none;
-  }
-
-  .hero_section_text-mobile {
-    display: grid;
-    font-size: 12px;
-    line-height: 18px;
-    font-weight: 600;
-    letter-spacing: 1px;
-    text-transform: uppercase;
-    background: linear-gradient(172deg, #06C412 14.08%, #CBFF01 47.44%, #EC6D33 76.2%, #CA3D2D 99.99%);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    margin-top: 12px;
-  }
-
-  .hero_section_text-container {
-    gap: 35px;
-  }
-
-  .content_section {
-    margin-left: 70px;
-  }
-
-  .content_section_first_block {
-    margin-bottom: 20px;
-  }
-
-  .content_section_first_block-text {
-    font-size: 16px;
-    line-height: 26px;
-    margin-top: -3px;
-  }
-
-  .content_section_arrow {
-    height: 54px;
-    width: 54px;
-    margin-bottom: 58px;
-  }
-
-  .content_section_second_block {
-    margin-left: -70px; 
-    margin-bottom: 23px;
-  }
-
-  .content_section_second_block-text {
-    font-size: 24px;
-    line-height: 32px;
-    text-align: left;
-  }
-
-  .content_section_third_block {
-    margin-bottom: 65px;
-  }
-
-  .content_section_third_block-text {
-    font-size: 14px;
-    line-height: 22px;
-  }
-
-  .core_section {
-    margin: 0px 0 37px 66px;
-  }
-
-  .core_section_title {
-    font-size: 12px;
-    line-height: 16px;
-    letter-spacing: 1px;
-    margin-bottom: 33px;
-  }
-
-  .core_section_list-container {
-    gap: 0;
-    flex-direction: column;
-  }
-
-  .core_section_list-item {
-    font-size: 14px;
-    line-height: 20px;
-    margin-bottom: 28px;
-  }
-
-  .core_section_list li:before{
-    top: -11px;
-    left: -2px;
-}
-
   .sidebar_wrapper {
     height: 823px;
   }
@@ -603,49 +267,5 @@
     display: inline;
   }
 
-}
-
-@media (max-width: 420px) {
-  .hero_section h1 {
-    font-size: 45px;
-    line-height: 50px;
-  }
-}
-
-@media (max-width: 390px) {
-  .hero_section h1 {
-    font-size: 40px;
-    line-height: 45px;
-  }
-
-  .hero_section_text-mobile {
-    font-size: 10px;
-    line-height: 18px;
-  }
-
-  .hero_section_text-container {
-    gap: 20px;
-  }
-
-  .content_section_first_block-text {
-    font-size: 14px;
-    line-height: 26px;
-  }
-}
-
-@media (max-width: 350px) {
-  .hero_section h1 {
-    font-size: 35px;
-  }
-
-  .content_section_second_block-text {
-    font-size: 22px;
-    line-height: 32px;
-    text-align: left;
-  }
-
-  .core_section_list-item {
-    font-size: 12px;
-  }
 }
 

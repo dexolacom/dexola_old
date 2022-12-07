@@ -58,3 +58,137 @@
   width: 100%;
   max-width: 805px;
 }
+
+@media (max-width: 1681px) {
+  .content_section {
+    margin-left: 122px;
+  }
+
+  .content_section_first_block-text {
+    font-size: 20px;
+    line-height: 32px;
+  }
+
+  .content_section_second_block {
+    margin-bottom: 32px;
+  }
+
+  .content_section_second_block-text {
+    font-size: 32px;
+    line-height: 40px;
+  }
+
+  .content_section_third_block-text {
+    font-size: 18px;
+    line-height: 28px;
+  }
+}
+
+@media (max-width: 1440px) {
+  .content_section {
+    margin-left: 108px;
+    margin-right: 105px;
+  }
+
+  .content_section_first_block {
+    margin-bottom: 34px;
+  }
+
+  .content_section_arrow {
+    margin-bottom: 88px;
+  }
+
+  .content_section_third_block {
+    margin-bottom: 88px;
+  }
+}
+
+@media (max-width: 1250px) {
+  .content_section_first_block {
+    margin-bottom: 57px;
+  }
+
+  .content_section_arrow {
+    margin-bottom: 95px;
+  }
+
+  .content_section {
+    margin-left: 150px;
+    margin-right: 0px;
+  }
+
+
+}
+
+@media (max-width: 850px) {
+  .content_section {
+    margin-left: 117px;
+  }
+
+  .content_section_first_block {
+    margin-bottom: 80px;
+  }
+
+  .content_section_arrow {
+    margin-bottom: 88px;
+  }
+}
+
+@media (max-width: 560px) {
+  .content_section {
+    margin-left: 70px;
+  }
+
+  .content_section_first_block {
+    margin-bottom: 20px;
+  }
+
+  .content_section_first_block-text {
+    font-size: 16px;
+    line-height: 26px;
+    margin-top: -3px;
+  }
+
+  .content_section_arrow {
+    height: 54px;
+    width: 54px;
+    margin-bottom: 58px;
+  }
+
+  .content_section_second_block {
+    margin-left: -70px;
+    margin-bottom: 23px;
+  }
+
+  .content_section_second_block-text {
+    font-size: 24px;
+    line-height: 32px;
+    text-align: left;
+  }
+
+  .content_section_third_block {
+    margin-bottom: 65px;
+  }
+
+  .content_section_third_block-text {
+    font-size: 14px;
+    line-height: 22px;
+  }
+}
+
+
+@media (max-width: 390px) {
+  .content_section_first_block-text {
+    font-size: 14px;
+    line-height: 26px;
+  }
+}
+
+@media (max-width: 350px) {
+  .content_section_second_block-text {
+    font-size: 22px;
+    line-height: 32px;
+    text-align: left;
+  }
+
+}

@@ -128,6 +128,12 @@ h4 {
 }
 
 @media (max-width: 1250px) {
+  .scroller {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+  }
+
   .general_wrapper {
     flex-direction: column;
   }
