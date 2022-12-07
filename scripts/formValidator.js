@@ -61,7 +61,7 @@ const checkEmail = () => {
   if (!isRequired(email)) {
     showError(emailEl, "Email cannot be blank.");
   } else if (!isEmailValid(email)) {
-    showError(emailEl, "Email is not valid.");
+    showError(emailEl, "Email or Telegram is not valid.");
   } else {
     showSuccess(emailEl);
     valid = true;
