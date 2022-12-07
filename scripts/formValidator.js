@@ -136,7 +136,7 @@ form.addEventListener("submit", function (e) {
 });
 
 const sendEmail = async (values) => {
-  const API_URL = "http://api.dexola.com";
+  const API_URL = "https://api.dexola.com";
   let response = await fetch(`${API_URL}/api/email/send`, {
     method: "POST",
     headers: {
