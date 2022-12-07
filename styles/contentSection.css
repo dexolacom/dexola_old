@@ -48,6 +48,10 @@
   margin-bottom: 96px;
 }
 
+.content_section_third_block-text span {
+  white-space: nowrap;
+}
+
 .content_section_third_block-text {
   font-family: 'Cera Pro', sans-serif;
   font-style: normal;
