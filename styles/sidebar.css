@@ -182,7 +182,7 @@ textarea::-webkit-scrollbar-thumb {
 }
 
 textarea:focus {
-  padding-bottom: 50px;
+  padding-bottom: 65px;
 }
 
 .textarea {
