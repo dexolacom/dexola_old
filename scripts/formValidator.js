@@ -8,15 +8,15 @@ const gotButton = document.getElementById('got_button')
 const successWrapper = document.getElementById('success_wrapper')
 const formWrapper = document.getElementById('form_wrapper')
 
-gotButton.addEventListener('click', function () {
-  formWrapper.style = 'display: block;'
-  successWrapper.style = 'display: none;'
-})
-
 
 const hideForm = () => {
   formWrapper.style = 'display: none;'
   successWrapper.style = 'display: flex;'
+
+  gotButton.addEventListener('click', function () {
+    formWrapper.style = 'display: block;'
+    successWrapper.style = 'display: none;'
+  })
 }
 
 const checkUsername = () => {
