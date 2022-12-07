@@ -344,6 +344,7 @@ textarea::placeholder {
   }
 
   .sidebar_content {
+    height: 800px;
     position: relative;
     padding: 144px 0 144px 72px;
   }
@@ -371,9 +372,8 @@ textarea::placeholder {
   }
 
   .sidebar_sidetext {
-    right: 24px;
-    /*position: absolute;*/
-    /*margin: auto 0;*/
+    right: 70px;
+    bottom: 80px;
   }
 
   .sidebar_title {
@@ -385,19 +385,9 @@ textarea::placeholder {
     -webkit-text-fill-color: transparent;
   }
 
-  /*.sidebar_success {*/
-  /*  max-width: 730px;*/
-  /*}*/
-
-
-
-
-
-  /*.sidebar_form {*/
-  /*  width: 55%;*/
-  /*  gap: 35px;*/
-  /*}*/
-
+  .sidebar_success {
+    max-width: 730px;
+  }
 
   .sidebar_title_container {
     margin-bottom: 58px;
