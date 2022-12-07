@@ -61,7 +61,7 @@ const checkEmail = () => {
   if (!isRequired(email)) {
     showError(emailEl, "Email cannot be blank.");
   } else if (!isEmailValid(email)) {
-    showError(emailEl, "Email or Telegram is not valid.");
+    showError(emailEl, "Email or Telegram (e.g. @NickName) is not valid.");
   } else {
     showSuccess(emailEl);
     valid = true;
@@ -129,7 +129,8 @@ form.addEventListener("submit", function (e) {
   // submit to the server if the form is valid
   if (isFormValid) {
     // Send email
-    sendEmail(values);
+    console.log(values);
+    // sendEmail(values);
     form.reset();
     hideForm()
   }
