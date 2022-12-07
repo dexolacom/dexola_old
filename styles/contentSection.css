@@ -108,6 +108,10 @@
     margin-bottom: 57px;
   }
 
+  .content_section_first_block-text {
+    max-width: 700px;
+  }
+
   .content_section_arrow {
     margin-bottom: 95px;
   }
@@ -176,11 +180,20 @@
   }
 }
 
+@media (max-width: 465px) {
+  .content_section_first_block-text:first-child {
+    max-width: 290px;
+  }
+}
 
 @media (max-width: 390px) {
   .content_section_first_block-text {
     font-size: 14px;
     line-height: 26px;
+  }
+
+  .content_section_first_block-text:first-child {
+    max-width: 250px;
   }
 }
 
@@ -191,4 +204,7 @@
     text-align: left;
   }
 
+  .content_section_first_block-text:first-child {
+    max-width: 250px;
+  }
 }

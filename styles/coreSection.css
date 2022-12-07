@@ -6,13 +6,13 @@
   font-weight: 600;
   font-size: 16px;
   line-height: 26px;
-  max-width: 200px;
   letter-spacing: 2px;
   text-transform: uppercase;
   background: linear-gradient(128.19deg, #06C412 0%, #CBFF01 46.69%, #EC6D33 86.95%, #CA3D2D 120.24%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   margin-bottom: 42px;
+  max-width: 220px;
 }
 
 .core_section_list-container {
@@ -65,6 +65,7 @@
   .core_section_title {
     font-size: 14px;
     line-height: 24px;
+    max-width: 200px;
   }
 
   .core_section_list-item {
