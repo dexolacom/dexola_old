@@ -70,19 +70,22 @@ const checkEmail = () => {
 };
 
 const isEmailValid = (email) => {
-  const telegramRe = /@[a-zA-Z0-9]*/gm
-  const emailRe = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
-    
-    
-  return (
-    emailRe.test(String(email).toLowerCase()) ||
-    telegramRe.test(String(email).toLowerCase())
-  )
+  const telegramRe = /(^|\s)@\w+/gm
+  const emailRe = /^([a-zA-Z0-9_\-\.]+)@([a-zA-Z0-9_\-\.]+)\.([a-zA-Z]{2,5})$/;
+
+  const isEmail = emailRe.test(String(email).toLowerCase())
+  const isTelegram = telegramRe.test(String(email).toLowerCase())
+
+  if (!isEmail) {
+    return isTelegram
+  }
+
+  return isEmail
 };
 
-const isRequired = (value) => (value === "" ? false : true);
-const isBetween = (length, min, max) =>
-  length < min || length > max ? false : true;
+const isRequired = (value) => (value !== "");
+
+const isBetween = (length, min, max) => !(length < min || length > max);
 
 const showError = (input, message) => {
   const inputContainer = input.parentElement;

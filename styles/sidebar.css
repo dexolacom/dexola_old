@@ -171,6 +171,7 @@ textarea::placeholder {
 .textarea {
   resize: none;
   padding: 0 0 16px 0;
+  outline: none;
 }
 
 .sidebar_textarea:hover,
