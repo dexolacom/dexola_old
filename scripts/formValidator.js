@@ -140,7 +140,6 @@ const sendEmail = async (values) => {
   let response = await fetch(`${API_URL}/api/email/send`, {
     method: "POST",
     headers: {
-      "access-control-allow-origin" : "*",
       "Content-Type": "application/json;charset=utf-8",
     },
     body: JSON.stringify(values)
