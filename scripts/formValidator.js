@@ -138,6 +138,7 @@ form.addEventListener("submit", function (e) {
 const sendEmail = async (values) => {
   const API_URL = "https://api.dexola.com";
   let response = await fetch(`${API_URL}/api/email/send`, {
+    mode: 'no-cors',
     method: "POST",
     headers: {
       'Access-Control-Allow-Origin': '*',
