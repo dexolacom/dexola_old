@@ -1,168 +1,236 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0"/> -->
-  <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no" /> -->
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
-  <title>Dexola</title>
-  <link rel="stylesheet" href="./index.css">
-  <link rel="icon" href="assets/img/favicon.svg">
-  <script type="module" src="scripts/changeHeaderBackground.js"></script>
-  <script type="module" src="scripts/scroller.js"></script>
-  <script type="module" src="scripts/formValidator.js"></script>
-  <script type="module" src="scripts/showModal.js"></script>
-</head>
-<body>
-<div class='general_wrapper'>
-  <div class="content_wrapper">
-    <!--   header   -->
-    <header id='header' class='header_wrapper'>
-      <img class='header_logo' src='assets/img/logo.svg' alt='logo'/>
-      <p class='header_text'>
-        210 Middleton St, Nashville
-        <span>Tennessee 37210, US</span>
-      </p>
-    </header>
-    <main class='main_wrapper'>
-      <!--   heroSection   -->
-      <section class='hero_section'>
-        <h1 class='hero_section_title-right'>Cracking</h1>
-        <h1>the innovation</h1>
-        <div class='hero_section_text-container'>
-          <p class='hero_section_text'>
-            \\ Advisors. dreamers.
-            <span class="break_line_md">creators. <span class="break_line">in the Web3 space</span></span>
-          </p>
-          <p class='hero_section_text-mobile'>
-            \\ Advisors. dreamers.
-            <span>creators. in the Web3</span> <span>space</span>
-          </p>
-          <h1>Code<span class='blinking_cursor'>_</span></h1>
-        </div>
-      </section>
-      <!--   contentSection   -->
-      <section class='content_section'>
-        <div class='content_section_first_block'>
-          <p class='content_section_first_block-text'>Dexola is a blockchain development consultancy, empowered by
-            Trinetix—a globally trusted digital
-            partner.
-          </p>
-          <br/>
-          <p class='content_section_first_block-text'>
-            Together we enable truly customer-centric transformations, helping
-            forward-thinking businesses discover
-            their unique offer and the right path to their desired endgame.
-          </p>
-        </div>
-        <img class='content_section_arrow' src='assets/img/arrow.svg'/>
-        <div class='content_section_second_block'>
-          <p class='content_section_second_block-text'>
-            By working with visionary <span>startup</span> <span>founders</span> and <span>entrepreneurs</span>, we
-            reveal hidden
-            goldmines
-          </p>
-        </div>
-        <div class='content_section_third_block'>
-          <p class='content_section_third_block-text'>
-            and bring tailored, robust, and flexible blockchain solutions to the market. Whether it’s about auditing
-            smart contracts for advanced protection or building <span>a one-of-a-kind</span> GameFi metaverse—we’ve got you covered.
-          </p>
-        </div>
-      </section>
-      <h4 class='core_section_title'>Our core strengths</h4>
-      <!--   coreSection   -->
-      <section class='core_section'>
-        <div class='core_section_list-container'>
-          <ol class='core_section_list core_section_first_list'>
-            <li class='core_section_list-item'>Smart Contract Audits</li>
-            <li class='core_section_list-item'>Trading bots</li>
-            <li class='core_section_list-item'>Enterprise Blockchain</li>
-            <li class='core_section_list-item'>Custodian Solutions</li>
-            <li class='core_section_list-item'>NFT Marketplace Dev</li>
-            <li class='core_section_list-item'>Cross-Chain Solutions</li>
-          </ol>
-          <ol class='core_section_list core_section_second_list'>
-            <li class='core_section_list-item'>DeFi Development</li>
-            <li class='core_section_list-item'>DEX/CEX Development</li>
-            <li class='core_section_list-item'>IDO Token Sale</li>
-            <li class='core_section_list-item'>GameFi Development</li>
-            <li class='core_section_list-item'>Crypto Legal Compliance</li>
-          </ol>
-        </div>
-      </section>
-      <!--   footer   -->
-      <footer class='footer'>
-        <p class='footer_text'>© 2022 Dexola. Product by <a class="footer_link" href="https://www.trinetix.com/">Trinetix</a>
-        </p>
-        <a href="https://www.trinetix.com/">
-          <img class='footer_logo' src='./assets/img/crossLogo.svg' alt='crossLogo'>
-        </a>
-      </footer>
-      <!--   scroller   -->
-      <div id='scroller' class='scroller'>
-        <div class='scroller_dot'></div>
-        <p class='scroller_text'>Got a project idea in mind?</p>
-      </div>
-    </main>
-  </div>
-  <!-- sidebar -->
-  <section class='sidebar_wrapper' id="sidebar">
-    <div class="sidebar_modal_header" id="sidebar_header">
-      <img class='header_logo' src='assets/img/logo.svg' alt='logo'/>
-      <img class="sidebar_cross" src='assets/img/cross.svg'>
-    </div>
-    <p class='sidebar_sidetext sidetext_lg'>Crack the innovation code. Drive smarter futures.</p>
-    <div class='sidebar_content'>
-      <p class='sidebar_sidetext sidetext_sm'>Crack the innovation code. Drive smarter futures.</p>
-      <div class='sidebar_dot top_dot'></div>
-      <div class='sidebar_dot bottom_dot'></div>
-      <div class='sidebar_success' id='success_wrapper'>
-        <img class='sidebar_success_logo' src='assets/img/sender.svg'>
-        <div class='sidebar_success_text_container'>
-          <h3 class='sidebar_success_title'>
-            Thank you for reaching out!
-          </h3>
-          <p class='sidebar_success_text'>We will get back to you shortly.</p>
-        </div>
-        <button class='sidebar_button success_button' id='got_button'>GOT IT</button>
-      </div>
+  <head>
+    <!-- Google tag (gtag.js) -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-GDBFK1TFXZ"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
 
-      <div class='sidebar_form_wrapper' id='form_wrapper'>
-        <div class='sidebar_title_container'>
-          <h2 class='sidebar_title'>Got a project <span class='sidebar_break_md'>idea <span class='sidebar_break_sm'>in mind?</span></span>
-          </h2>
-          <span class='sidebar_subtitle'>Let’s talk</span>
-        </div>
-        <form class='sidebar_form' id="form">
-          <div class='sidebar_input_container'>
-            <input id='nameInput' class='sidebar_input' type='text' placeholder='name' maxlength="22"/>
-            <label class='sidebar_label' for='nameInput'>Name</label>
-            <span class="error_message"></span>
+      gtag("config", "G-GDBFK1TFXZ");
+    </script>
+    <meta charset="UTF-8" />
+    <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0"/> -->
+    <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no" /> -->
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0"
+    />
+    <title>Dexola</title>
+    <link rel="stylesheet" href="./index.css" />
+    <link rel="icon" href="assets/img/favicon.svg" />
+    <script type="module" src="scripts/changeHeaderBackground.js"></script>
+    <script type="module" src="scripts/scroller.js"></script>
+    <script type="module" src="scripts/formValidator.js"></script>
+    <script type="module" src="scripts/showModal.js"></script>
+  </head>
+  <body>
+    <div class="general_wrapper">
+      <div class="content_wrapper">
+        <!--   header   -->
+        <header id="header" class="header_wrapper">
+          <img class="header_logo" src="assets/img/logo.svg" alt="logo" />
+          <p class="header_text">
+            210 Middleton St, Nashville
+            <span>Tennessee 37210, US</span>
+          </p>
+        </header>
+        <main class="main_wrapper">
+          <!--   heroSection   -->
+          <section class="hero_section">
+            <h1 class="hero_section_title-right">Cracking</h1>
+            <h1>the innovation</h1>
+            <div class="hero_section_text-container">
+              <p class="hero_section_text">
+                \\ Advisors. dreamers.
+                <span class="break_line_md"
+                  >creators.
+                  <span class="break_line">in the Web3 space</span></span
+                >
+              </p>
+              <p class="hero_section_text-mobile">
+                \\ Advisors. dreamers.
+                <span>creators. in the Web3</span> <span>space</span>
+              </p>
+              <h1>Code<span class="blinking_cursor">_</span></h1>
+            </div>
+          </section>
+          <!--   contentSection   -->
+          <section class="content_section">
+            <div class="content_section_first_block">
+              <p class="content_section_first_block-text">
+                Dexola is a blockchain development consultancy, empowered by
+                Trinetix—a globally trusted digital partner.
+              </p>
+              <br />
+              <p class="content_section_first_block-text">
+                Together we enable truly customer-centric transformations,
+                helping forward-thinking businesses discover their unique offer
+                and the right path to their desired endgame.
+              </p>
+            </div>
+            <img class="content_section_arrow" src="assets/img/arrow.svg" />
+            <div class="content_section_second_block">
+              <p class="content_section_second_block-text">
+                By working with visionary <span>startup</span>
+                <span>founders</span> and <span>entrepreneurs</span>, we reveal
+                hidden goldmines
+              </p>
+            </div>
+            <div class="content_section_third_block">
+              <p class="content_section_third_block-text">
+                and bring tailored, robust, and flexible blockchain solutions to
+                the market. Whether it’s about auditing smart contracts for
+                advanced protection or building
+                <span>a one-of-a-kind</span> GameFi metaverse—we’ve got you
+                covered.
+              </p>
+            </div>
+          </section>
+          <h4 class="core_section_title">Our core strengths</h4>
+          <!--   coreSection   -->
+          <section class="core_section">
+            <div class="core_section_list-container">
+              <ol class="core_section_list core_section_first_list">
+                <li class="core_section_list-item">Smart Contract Audits</li>
+                <li class="core_section_list-item">Trading bots</li>
+                <li class="core_section_list-item">Enterprise Blockchain</li>
+                <li class="core_section_list-item">Custodian Solutions</li>
+                <li class="core_section_list-item">NFT Marketplace Dev</li>
+                <li class="core_section_list-item">Cross-Chain Solutions</li>
+              </ol>
+              <ol class="core_section_list core_section_second_list">
+                <li class="core_section_list-item">DeFi Development</li>
+                <li class="core_section_list-item">DEX/CEX Development</li>
+                <li class="core_section_list-item">IDO Token Sale</li>
+                <li class="core_section_list-item">GameFi Development</li>
+                <li class="core_section_list-item">Crypto Legal Compliance</li>
+              </ol>
+            </div>
+          </section>
+          <!--   footer   -->
+          <footer class="footer">
+            <p class="footer_text">
+              © 2022 Dexola. Product by
+              <a class="footer_link" href="https://www.trinetix.com/"
+                >Trinetix</a
+              >
+            </p>
+            <a href="https://www.trinetix.com/">
+              <img
+                class="footer_logo"
+                src="./assets/img/crossLogo.svg"
+                alt="crossLogo"
+              />
+            </a>
+          </footer>
+          <!--   scroller   -->
+          <div id="scroller" class="scroller">
+            <div class="scroller_dot"></div>
+            <p class="scroller_text">Got a project idea in mind?</p>
           </div>
-          <div class='sidebar_input_container'>
-            <input id='emailInput' class='sidebar_input email_input' type='text' placeholder='email' maxlength="50"/>
-            <label class='sidebar_label' for='emailInput'>Email / Telegram</label>
-            <span class="error_message"></span>
-          </div>
-          <div class='sidebar_input_container'>
-            <input id='companyInput' class='sidebar_input' type='text' placeholder='company' maxlength="22"/>
-            <label class='sidebar_label' for='companyInput'>Company (optional)</label>
-          </div>
-          <div class='sidebar_input_container'>
-            <label class='sidebar_textarea_label' for='messageInput'>Message</label>
-            <textarea
-              maxlength="1000"
-              id="messageInput"
-              class='sidebar_input textarea'
-              placeholder='Tell us about your needs and we’ll set up a discovery call with one of our subject matter experts'></textarea>
-            <span class="error_message"></span>
-          </div>
-          <button class='sidebar_button' type='submit' id='send_button'>Send message</button>
-        </form>
+        </main>
       </div>
+      <!-- sidebar -->
+      <section class="sidebar_wrapper" id="sidebar">
+        <div class="sidebar_modal_header" id="sidebar_header">
+          <img class="header_logo" src="assets/img/logo.svg" alt="logo" />
+          <img class="sidebar_cross" src="assets/img/cross.svg" />
+        </div>
+        <p class="sidebar_sidetext sidetext_lg">
+          Crack the innovation code. Drive smarter futures.
+        </p>
+        <div class="sidebar_content">
+          <p class="sidebar_sidetext sidetext_sm">
+            Crack the innovation code. Drive smarter futures.
+          </p>
+          <div class="sidebar_dot top_dot"></div>
+          <div class="sidebar_dot bottom_dot"></div>
+          <div class="sidebar_success" id="success_wrapper">
+            <img class="sidebar_success_logo" src="assets/img/sender.svg" />
+            <div class="sidebar_success_text_container">
+              <h3 class="sidebar_success_title">Thank you for reaching out!</h3>
+              <p class="sidebar_success_text">
+                We will get back to you shortly.
+              </p>
+            </div>
+            <button class="sidebar_button success_button" id="got_button">
+              GOT IT
+            </button>
+          </div>
+
+          <div class="sidebar_form_wrapper" id="form_wrapper">
+            <div class="sidebar_title_container">
+              <h2 class="sidebar_title">
+                Got a project
+                <span class="sidebar_break_md"
+                  >idea <span class="sidebar_break_sm">in mind?</span></span
+                >
+              </h2>
+              <span class="sidebar_subtitle">Let’s talk</span>
+            </div>
+            <form class="sidebar_form" id="form">
+              <div class="sidebar_input_container">
+                <input
+                  id="nameInput"
+                  class="sidebar_input"
+                  type="text"
+                  placeholder="name"
+                  maxlength="22"
+                />
+                <label class="sidebar_label" for="nameInput">Name</label>
+                <span class="error_message"></span>
+              </div>
+              <div class="sidebar_input_container">
+                <input
+                  id="emailInput"
+                  class="sidebar_input email_input"
+                  type="text"
+                  placeholder="email"
+                  maxlength="50"
+                />
+                <label class="sidebar_label" for="emailInput"
+                  >Email / Telegram</label
+                >
+                <span class="error_message"></span>
+              </div>
+              <div class="sidebar_input_container">
+                <input
+                  id="companyInput"
+                  class="sidebar_input"
+                  type="text"
+                  placeholder="company"
+                  maxlength="22"
+                />
+                <label class="sidebar_label" for="companyInput"
+                  >Company (optional)</label
+                >
+              </div>
+              <div class="sidebar_input_container">
+                <label class="sidebar_textarea_label" for="messageInput"
+                  >Message</label
+                >
+                <textarea
+                  maxlength="1000"
+                  id="messageInput"
+                  class="sidebar_input textarea"
+                  placeholder="Tell us about your needs and we’ll set up a discovery call with one of our subject matter experts"
+                ></textarea>
+                <span class="error_message"></span>
+              </div>
+              <button class="sidebar_button" type="submit" id="send_button">
+                Send message
+              </button>
+            </form>
+          </div>
+        </div>
+      </section>
     </div>
-  </section>
-</div>
-</body>
+  </body>
 </html>
